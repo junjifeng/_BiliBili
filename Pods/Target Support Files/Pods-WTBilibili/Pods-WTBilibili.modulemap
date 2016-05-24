@@ -1,0 +1,6 @@
+framework module Pods_WTBilibili {
+  umbrella header "Pods-WTBilibili-umbrella.h"
+
+  export *
+  module * { export * }
+}
