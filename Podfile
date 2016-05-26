@@ -8,6 +8,7 @@ pod 'SDCycleScrollView'
 pod 'AFNetworking'
 pod 'YYCategories'
 pod 'SnapKit'
+pod 'FLEX', '~> 2.0', :configurations => ['Debug']
 
 end
 

@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-WTBilibili/AFNetworking.framework"
+  install_framework "Pods-WTBilibili/FLEX.framework"
   install_framework "Pods-WTBilibili/SDCycleScrollView.framework"
   install_framework "Pods-WTBilibili/SDWebImage.framework"
   install_framework "Pods-WTBilibili/SnapKit.framework"
