@@ -19,6 +19,7 @@
 		30496F9D1CD9E83C00C8B5E6 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F9C1CD9E83C00C8B5E6 /* String-Extension.swift */; };
 		46C192C357021F10FE056CED /* Pods_WTBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */; };
 		4E51F51E1CF6CB9900A0D748 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E51F51D1CF6CB9900A0D748 /* IJKMediaFramework.framework */; };
+		4E51F5201CF6EB1000A0D748 /* WTMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E51F51F1CF6EB1000A0D748 /* WTMineViewController.storyboard */; };
 		B6A4284E1CD8D82E0033E65B /* WTMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */; };
 		B6A428501CD8DB4A0033E65B /* WTDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4284F1CD8DB4A0033E65B /* WTDiscoverViewController.swift */; };
 		B6A428561CD8E2010033E65B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A428551CD8E2010033E65B /* Common.swift */; };
@@ -51,6 +52,7 @@
 		30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		30496F9C1CD9E83C00C8B5E6 /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		4E51F51D1CF6CB9900A0D748 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		4E51F51F1CF6EB1000A0D748 /* WTMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTMineViewController.storyboard; sourceTree = "<group>"; };
 		6698BF783E60EC7413211644 /* Pods-WTBilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTBilibili/Pods-WTBilibili.release.xcconfig"; sourceTree = "<group>"; };
 		7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineViewController.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */,
+				4E51F51F1CF6EB1000A0D748 /* WTMineViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -597,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A4287E1CDA1C690033E65B /* WTVideoListCell.xib in Resources */,
+				4E51F5201CF6EB1000A0D748 /* WTMineViewController.storyboard in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */,
 				30496F871CD9896300C8B5E6 /* WTHomeViewController.xib in Resources */,

@@ -36,7 +36,9 @@ extension WTTabBarController
         addOneChildViewController(WTDiscoverViewController(), title: "发现", imageName: "home_discovery_tab")
         
         // 4、我的
-        addOneChildViewController(WTMineViewController(), title: "我的", imageName: "home_home_tab")
+        
+        let mineVC = UIStoryboard(name: "WTMineViewController", bundle: nil).instantiateInitialViewController()!
+        addOneChildViewController(mineVC, title: "我的", imageName: "home_home_tab")
     }
     
     // MARK: 添加一个控制器

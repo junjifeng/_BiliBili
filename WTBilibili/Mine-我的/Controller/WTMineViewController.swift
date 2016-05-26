@@ -10,9 +10,13 @@ import UIKit
 
 class WTMineViewController: UITableViewController {
 
+    @IBOutlet var mineTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//     self = UIStoryboard.init(name: NSStringFromClass(self), bundle: NSBundle.mainBundle())
+        
         view.backgroundColor = UIColor.whiteColor()
     }
 
