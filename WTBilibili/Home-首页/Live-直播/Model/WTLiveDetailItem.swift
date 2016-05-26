@@ -45,7 +45,7 @@ class WTLiveDetailItem: NSObject
     var m_face: NSURL?
     
     var background_id: Int = 0
-    
+    /// 关注人数
     var attention: Int = 0
     
     var online: Int = 0
@@ -67,6 +67,11 @@ class WTLiveDetailItem: NSObject
     var vip: Int = 0
     
     var svip: Int = 0
+    /// 排名
+    var master_level: Int = 0
+    /// 排名的颜色
+    var master_level_color: Int = 0
+    
     
     // MARK: - 自定义初始化函数
     init(dict: [String: AnyObject])

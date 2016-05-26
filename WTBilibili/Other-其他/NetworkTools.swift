@@ -126,11 +126,14 @@ extension NetworkTools
     // 根据room_id查询出直播详情信息
     func loadHomeLiveDetailData(room_id: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
     {
+        
         // 1、url
-        let urlString = "http://live.bilibili.com/api/room_info?_device=iphone&_hwid=a1761fdacd4633fd&_ulv=10000&access_key=a2dbcc35a5ddf9f2d2222ccedef1e5b4&appkey=\(APP_KEY)&appver=3220&build=3220&buld=3220&platform=ios&room_id=\(room_id)&type=json&sign=\(WTSignTool.encodeHomeLiveDetailSign(room_id))"
+        //let urlString418 = "http://live.bilibili.com/api/room_info?_device=iphone&_hwid=a1761fdacd4633fd&_ulv=10000&access_key=a2dbcc35a5ddf9f2d2222ccedef1e5b4&appkey=\(APP_KEY)&appver=3220&build=3220&buld=3220&platform=ios&room_id=\(room_id)&type=json&sign=\(WTSignTool.encodeHomeLiveDetailSign418(room_id))"
+        
+        let urlString420 = "http://live.bilibili.com/AppRoom/index?actionKey=appkey&appkey=\(APP_KEY)&build=3300&device=phone&platform=ios&room_id=\(room_id)&sign=\(WTSignTool.encodeHomeLiveDetailSign420(room_id, timeInterval: WTTimeInterval))&ts=\(WTTimeInterval)"
         
         // 2、发送请求
-        request(.GET, urlString: urlString, parameters: nil) { (result, error) in
+        request(.GET, urlString: urlString420, parameters: nil) { (result, error) in
             
             self.handleDictBlock(result, error, finished)
             

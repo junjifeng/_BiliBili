@@ -12,26 +12,16 @@ import Ji
 class WTLiveDetailViewController: UIViewController {
 
     // MARK: 控件
-    /// 视频icon
-    @IBOutlet weak var coverImageV: UIImageView!
-    /// 标题
-    @IBOutlet weak var titleLabel: UILabel!
-    /// 名字
-    @IBOutlet weak var nameLabel: UILabel!
-    /// 头像
-    @IBOutlet weak var faceImageV: UIImageView!
-    /// 头像背景的View
-    @IBOutlet weak var faceBgView: UIView!
-    /// 在线人数
-    @IBOutlet weak var onlineLabel: UILabel!
-    /// 关注操作按钮
-    @IBOutlet weak var followOperationBtn: UIButton!
+    @IBOutlet weak var userInfoContentView: UIView!
+    
+    var liveDetailUserInfoView = WTLiveDetailUserInfoView.liveDetailUserInfoView()
     
     // MARK: - live数据源模型
     var liveItem: WTLiveItem!
     
     var liveDetailItem: WTLiveDetailItem!
     
+    /// 播放地址
     var playerUrl: String!
     
     // MARK: 系统回调函数
@@ -42,11 +32,13 @@ class WTLiveDetailViewController: UIViewController {
         // 设置UI
         setupUI()
         
-        // 设置UI数据
-        setupUIData()
-        
         // 加载数据
         loadData()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        liveDetailUserInfoView.frame = userInfoContentView.bounds
     }
 }
 
@@ -56,21 +48,8 @@ extension WTLiveDetailViewController
     // 设置UI
     private func setupUI()
     {
-        // 1、添加圆角
-        followOperationBtn.layer.cornerRadius = followOperationBtn.frame.size.height * 0.5
-        
-    }
-    
-    // MARK: 设置UI数据
-    private func setupUIData()
-    {
-        titleLabel.text = liveItem.title
-        
-        nameLabel.text = liveItem.owner.name
-        
-        faceImageV.sd_setImageWithURL(liveItem.owner.face)
-        
-        onlineLabel.text = "\(liveItem.online)"
+        // 1、添加子控件
+        userInfoContentView.addSubview(liveDetailUserInfoView)
     }
     
     // MARK: 加载数据
@@ -99,10 +78,10 @@ extension WTLiveDetailViewController
             // 2、获取结果
             self.liveDetailItem = WTLiveDetailItem(dict: result!)
             
-            // 3、刷新头像
-            self.coverImageV.sd_setImageWithURL(self.liveDetailItem.cover)
+            // 3、更新UI
+            self.liveDetailUserInfoView.liveDetailItem = self.liveDetailItem
             
-            // 获取直播的URL
+            // 4、获取直播的URL
             self.getLivePlayerUrl()
         }
     }

@@ -34,3 +34,6 @@ let WTHomeTitleBtnNormalColor = WTColor(r: 153, g: 153, b: 153)
 let WTHomeTitleBtnSelectedColor = WTMainColor
 
 let WTHomeTableViewBackGroundColor = WTColor(r: 244, g: 244, b: 244)
+
+/// 时间戳
+let WTTimeInterval = Int(NSDate().timeIntervalSince1970)
