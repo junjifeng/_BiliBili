@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D3g-VV-7J8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="Ctw-66-dU0">
+            <objects>
+                <viewController id="D3g-VV-7J8" customClass="WTPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4pk-3A-t4I"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZWn-ji-xJK"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.75" contentMode="scaleToFill" id="Yl4-3d-rET">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPg-Ec-lIj">
+                                <rect key="frame" x="0.0" y="20" width="600" height="40"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9xZ-ad-8I3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="g2D-ma-7Ow"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RW9-zz-XoC">
+                                <rect key="frame" x="0.0" y="560" width="600" height="40"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MM6-9v-3fQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-1i-Pry">
+                                            <rect key="frame" x="277" y="5" width="46" height="30"/>
+                                            <state key="normal" title="Button"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Pda-1i-Pry" firstAttribute="centerY" secondItem="MM6-9v-3fQ" secondAttribute="centerY" id="F9i-p8-Eij"/>
+                                        <constraint firstItem="Pda-1i-Pry" firstAttribute="centerX" secondItem="MM6-9v-3fQ" secondAttribute="centerX" id="VOo-X6-uGK"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uys-eB-aWm"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RW9-zz-XoC" firstAttribute="leading" secondItem="Yl4-3d-rET" secondAttribute="leading" id="4nI-Nd-krK"/>
+                            <constraint firstAttribute="trailing" secondItem="RW9-zz-XoC" secondAttribute="trailing" id="Fmm-Fw-mEO"/>
+                            <constraint firstItem="BPg-Ec-lIj" firstAttribute="leading" secondItem="Yl4-3d-rET" secondAttribute="leading" id="Y1L-Qu-Vca"/>
+                            <constraint firstItem="BPg-Ec-lIj" firstAttribute="top" secondItem="4pk-3A-t4I" secondAttribute="bottom" id="e9d-cN-F5k"/>
+                            <constraint firstItem="ZWn-ji-xJK" firstAttribute="top" secondItem="RW9-zz-XoC" secondAttribute="bottom" id="myF-9S-FKW"/>
+                            <constraint firstAttribute="trailing" secondItem="BPg-Ec-lIj" secondAttribute="trailing" id="rWL-mK-hAZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCX-uP-XtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="284"/>
+        </scene>
+    </scenes>
+</document>
