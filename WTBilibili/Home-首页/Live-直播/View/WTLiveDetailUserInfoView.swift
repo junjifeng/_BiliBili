@@ -4,13 +4,13 @@
 //
 //  Created by 无头骑士 GJ on 16/5/26.
 //  Copyright © 2016年 无头骑士 GJ. All rights reserved.
-//
+//  直播详情页面中用户信息的View
 
 import UIKit
 
 class WTLiveDetailUserInfoView: UIView
 {
-    // MARK: - 控件
+    // MARK: - 拖线的控件
     /// 头像
     @IBOutlet weak var faceImageV: UIImageView!
     /// 标题
@@ -85,7 +85,6 @@ extension WTLiveDetailUserInfoView
         
         // 关注按钮
         followOperationBtn.setTitleColor(WTMainColor, forState: .Normal)
-        
         followOperationBtn.layer.cornerRadius = 3
         followOperationBtn.layer.masksToBounds = true
         followOperationBtn.layer.borderColor = WTMainColor.CGColor

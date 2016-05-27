@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304699BC1CF7DA0A009C0F9B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */; };
+		304699C91CF7DECE009C0F9B /* WTLiveDetailVerticalPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304699C81CF7DECE009C0F9B /* WTLiveDetailVerticalPlayerView.swift */; };
+		304699CB1CF7DFFF009C0F9B /* WTLiveDetailVerticalPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304699CA1CF7DFFF009C0F9B /* WTLiveDetailVerticalPlayerView.xib */; };
 		30496F861CD9896300C8B5E6 /* WTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */; };
 		30496F871CD9896300C8B5E6 /* WTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */; };
 		30496F8A1CD9896300C8B5E6 /* WTSomeDramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */; };
@@ -49,7 +52,7 @@
 		B6DA3A361CE4EDF0006384A1 /* WTLiveListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A1F1CE4EDF0006384A1 /* WTLiveListCollectionView.swift */; };
 		B6DA3A371CE4EDF0006384A1 /* WTLivePartitionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A201CE4EDF0006384A1 /* WTLivePartitionCell.swift */; };
 		B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DA3A211CE4EDF0006384A1 /* WTLivePartitionCell.xib */; };
-		B6DA3A3C1CE4EE73006384A1 /* WTSignTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A3B1CE4EE73006384A1 /* WTSignTool.swift */; };
+		B6DA3A3C1CE4EE73006384A1 /* WTBilibiliTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A3B1CE4EE73006384A1 /* WTBilibiliTool.swift */; };
 		B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A3E1CE4EE9C006384A1 /* Common.swift */; };
 		B6DA3A431CE4EE9C006384A1 /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A3F1CE4EE9C006384A1 /* String-Extension.swift */; };
 		B6DA3A441CE4EE9C006384A1 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A401CE4EE9C006384A1 /* UIImage-Extension.swift */; };
@@ -69,6 +72,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		304699C81CF7DECE009C0F9B /* WTLiveDetailVerticalPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveDetailVerticalPlayerView.swift; sourceTree = "<group>"; };
+		304699CA1CF7DFFF009C0F9B /* WTLiveDetailVerticalPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLiveDetailVerticalPlayerView.xib; sourceTree = "<group>"; };
 		30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTHomeViewController.swift; sourceTree = "<group>"; };
 		30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTHomeViewController.xib; sourceTree = "<group>"; };
 		30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSomeDramaViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +123,7 @@
 		B6DA3A1F1CE4EDF0006384A1 /* WTLiveListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveListCollectionView.swift; sourceTree = "<group>"; };
 		B6DA3A201CE4EDF0006384A1 /* WTLivePartitionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLivePartitionCell.swift; sourceTree = "<group>"; };
 		B6DA3A211CE4EDF0006384A1 /* WTLivePartitionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLivePartitionCell.xib; sourceTree = "<group>"; };
-		B6DA3A3B1CE4EE73006384A1 /* WTSignTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSignTool.swift; sourceTree = "<group>"; };
+		B6DA3A3B1CE4EE73006384A1 /* WTBilibiliTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBilibiliTool.swift; sourceTree = "<group>"; };
 		B6DA3A3E1CE4EE9C006384A1 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B6DA3A3F1CE4EE9C006384A1 /* String-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		B6DA3A401CE4EE9C006384A1 /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				B6DA3A631CE4EF9E006384A1 /* libz.tbd in Frameworks */,
 				46C192C357021F10FE056CED /* Pods_WTBilibili.framework in Frameworks */,
 				B6DA3A611CE4EF88006384A1 /* IJKMediaFramework.framework in Frameworks */,
+				304699BC1CF7DA0A009C0F9B /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +307,7 @@
 		3235C7E918C28D4EF0A5B504 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */,
 				B6DA3A621CE4EF9E006384A1 /* libz.tbd */,
 				B6DA3A601CE4EF88006384A1 /* IJKMediaFramework.framework */,
 				7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */,
@@ -493,7 +501,7 @@
 				B6A428511CD8DCE00033E65B /* Startup-启动 */,
 				B6D4F1C11CD8D1C3009B39E0 /* TabBar */,
 				30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */,
-				B6DA3A3B1CE4EE73006384A1 /* WTSignTool.swift */,
+				B6DA3A3B1CE4EE73006384A1 /* WTBilibiliTool.swift */,
 				B6DA39E81CE4EAC4006384A1 /* WTBilibili-Bridging-Header.h */,
 			);
 			path = "Other-其他";
@@ -525,9 +533,9 @@
 		B6DA3A091CE4EDF0006384A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6DA3A0A1CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard */,
-				B6DA3A0B1CE4EDF0006384A1 /* WTLiveDetailViewController.swift */,
 				B6DA3A0C1CE4EDF0006384A1 /* WTLiveViewController.swift */,
+				B6DA3A0B1CE4EDF0006384A1 /* WTLiveDetailViewController.swift */,
+				B6DA3A0A1CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -560,6 +568,8 @@
 				B6DA3A1F1CE4EDF0006384A1 /* WTLiveListCollectionView.swift */,
 				B6DA3A201CE4EDF0006384A1 /* WTLivePartitionCell.swift */,
 				B6DA3A211CE4EDF0006384A1 /* WTLivePartitionCell.xib */,
+				304699C81CF7DECE009C0F9B /* WTLiveDetailVerticalPlayerView.swift */,
+				304699CA1CF7DFFF009C0F9B /* WTLiveDetailVerticalPlayerView.xib */,
 				B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */,
 				B66E25F21CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib */,
 			);
@@ -686,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */,
+				304699CB1CF7DFFF009C0F9B /* WTLiveDetailVerticalPlayerView.xib in Resources */,
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */,
@@ -787,7 +798,7 @@
 				B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */,
 				B6DA3A291CE4EDF0006384A1 /* WTLiveDetailItem.swift in Sources */,
 				B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */,
-				B6DA3A3C1CE4EE73006384A1 /* WTSignTool.swift in Sources */,
+				B6DA3A3C1CE4EE73006384A1 /* WTBilibiliTool.swift in Sources */,
 				B6DA3A321CE4EDF0006384A1 /* WTEntranceIconButton.swift in Sources */,
 				B6DA3A361CE4EDF0006384A1 /* WTLiveListCollectionView.swift in Sources */,
 				B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */,
@@ -797,6 +808,7 @@
 				B6A4286F1CD8F28C0033E65B /* WTStartupViewController.swift in Sources */,
 				B6D4F17B1CD8CAFD009B39E0 /* AppDelegate.swift in Sources */,
 				B6DA3A581CE4EF41006384A1 /* WTRecommendItem.swift in Sources */,
+				304699C91CF7DECE009C0F9B /* WTLiveDetailVerticalPlayerView.swift in Sources */,
 				30496F861CD9896300C8B5E6 /* WTHomeViewController.swift in Sources */,
 				B6DA3A561CE4EF41006384A1 /* WTRecommendViewController.swift in Sources */,
 			);

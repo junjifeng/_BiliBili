@@ -4,25 +4,30 @@
 //
 //  Created by 无头骑士 GJ on 16/5/10.
 //  Copyright © 2016年 无头骑士 GJ. All rights reserved.
-//
+//  直播详情控制器
 
 import UIKit
-import Ji
+
 
 class WTLiveDetailViewController: UIViewController {
 
-    // MARK: 控件
-    @IBOutlet weak var userInfoContentView: UIView!
-    
-    var liveDetailUserInfoView = WTLiveDetailUserInfoView.liveDetailUserInfoView()
-    
-    // MARK: - live数据源模型
+    // MARK: - 属性
+    /// live数据模型
     var liveItem: WTLiveItem!
-    
+    /// liveDetail模型
     var liveDetailItem: WTLiveDetailItem!
     
-    /// 播放地址
-    var playerUrl: String!
+    // MARK: 控件
+    /// 竖屏播放器ContentView
+    @IBOutlet weak var verticalPlayerContentView: UIView!
+    /// 用户信息ContentView
+    @IBOutlet weak var userInfoContentView: UIView!
+
+    /// 竖屏播放器View
+    var liveDetailVerticalPlayerView = WTLiveDetailVerticalPlayerView.liveDetailVerticalPlayerView()
+    
+    /// 用户信息View
+    var liveDetailUserInfoView = WTLiveDetailUserInfoView.liveDetailUserInfoView()
     
     // MARK: 系统回调函数
     override func viewDidLoad()
@@ -36,8 +41,12 @@ class WTLiveDetailViewController: UIViewController {
         loadData()
     }
     
-    override func viewDidLayoutSubviews() {
+    override func viewDidLayoutSubviews()
+    {
         super.viewDidLayoutSubviews()
+        
+        // 1、设置Frame
+        liveDetailVerticalPlayerView.frame = verticalPlayerContentView.bounds
         liveDetailUserInfoView.frame = userInfoContentView.bounds
     }
 }
@@ -45,10 +54,11 @@ class WTLiveDetailViewController: UIViewController {
 // MARK: - 自定义函数
 extension WTLiveDetailViewController
 {
-    // 设置UI
+    // MARK: 设置UI
     private func setupUI()
     {
         // 1、添加子控件
+        verticalPlayerContentView.addSubview(liveDetailVerticalPlayerView)
         userInfoContentView.addSubview(liveDetailUserInfoView)
     }
     
@@ -66,7 +76,7 @@ extension WTLiveDetailViewController
     // MARK: 加载直播详情信息
     private func loadLiveDetailData()
     {
-        NetworkTools.shareInstance.loadHomeLiveDetailData(liveItem.room_id) { (result, error) in
+        NetworkTools.shareInstance.loadHomeLiveDetailData420(liveItem.room_id) { (result, error) in
             
             // 1.错误校验
             if error != nil
@@ -79,29 +89,12 @@ extension WTLiveDetailViewController
             self.liveDetailItem = WTLiveDetailItem(dict: result!)
             
             // 3、更新UI
-            self.liveDetailUserInfoView.liveDetailItem = self.liveDetailItem
+            // 设置播放器的URL
+            self.liveDetailVerticalPlayerView.url = WTBilibiliTool.encodeLivePlayerUrl(self.liveDetailItem.schedule.cid)
             
-            // 4、获取直播的URL
-            self.getLivePlayerUrl()
+            // 更新用户信息的View的数据
+            self.liveDetailUserInfoView.liveDetailItem = self.liveDetailItem
         }
-    }
-    
-    // 获取直播的URL
-    private func getLivePlayerUrl()
-    {
-        let videoXML = Ji(xmlURL: NSURL(string: "http://live.bilibili.com/api/playurl?player=1&quality=0&cid=\(self.liveDetailItem.schedule.cid)")!)
-        playerUrl = videoXML?.xPath("//video//durl//url")?.first!.content
     }
 }
 
-// MARK: - 事件
-extension WTLiveDetailViewController
-{
-    // MARK: 插放按钮事件
-    @IBAction func playBtnClick(sender: UIButton)
-    {
-        let playerVC = WTPlayerViewController()
-        playerVC.url = NSURL(string: playerUrl)
-        presentViewController(playerVC, animated: true, completion: nil)
-    }
-}

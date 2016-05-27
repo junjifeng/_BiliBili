@@ -189,10 +189,7 @@ extension WTLiveHeaderView: SDCycleScrollViewDelegate
     // MARK: 点击轮播图图片的回调
     func cycleScrollView(cycleScrollView: SDCycleScrollView!, didSelectItemAtIndex index: Int)
     {
-        if let delegate = self.delegate
-        {
-            let value = bannerItems![index].value
-            delegate.headerView(self, value: value)
-        }
+        let value = bannerItems![index].value
+        delegate?.headerView(self, value: value)
     }
 }

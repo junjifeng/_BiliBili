@@ -54,9 +54,3 @@ extension WTLivePartitionCell
         }
     }
 }
-
-
-extension WTLivePartitionCell
-{
-    
-}

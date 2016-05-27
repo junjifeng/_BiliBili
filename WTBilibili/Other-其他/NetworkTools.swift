@@ -109,7 +109,7 @@ extension NetworkTools
 // MARK: - 首页->直播
 extension NetworkTools
 {
-    // 加载直播首页的数据
+    // MARK: 加载直播首页的数据
     func loadHomeLiveData(finished: (result: [String: AnyObject]?, error: NSError?) -> ())
     {
         // 1、url
@@ -123,14 +123,26 @@ extension NetworkTools
         }
     }
     
-    // 根据room_id查询出直播详情信息
-    func loadHomeLiveDetailData(room_id: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
+    // MARK: 根据room_id查询出直播详情信息  418
+    func loadHomeLiveDetailData418(room_id: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
     {
         
         // 1、url
-        //let urlString418 = "http://live.bilibili.com/api/room_info?_device=iphone&_hwid=a1761fdacd4633fd&_ulv=10000&access_key=a2dbcc35a5ddf9f2d2222ccedef1e5b4&appkey=\(APP_KEY)&appver=3220&build=3220&buld=3220&platform=ios&room_id=\(room_id)&type=json&sign=\(WTSignTool.encodeHomeLiveDetailSign418(room_id))"
+        let urlString418 = "http://live.bilibili.com/api/room_info?_device=iphone&_hwid=a1761fdacd4633fd&_ulv=10000&access_key=a2dbcc35a5ddf9f2d2222ccedef1e5b4&appkey=\(APP_KEY)&appver=3220&build=3220&buld=3220&platform=ios&room_id=\(room_id)&type=json&sign=\(WTBilibiliTool.encodeHomeLiveDetailSign418(room_id))"
         
-        let urlString420 = "http://live.bilibili.com/AppRoom/index?actionKey=appkey&appkey=\(APP_KEY)&build=3300&device=phone&platform=ios&room_id=\(room_id)&sign=\(WTSignTool.encodeHomeLiveDetailSign420(room_id, timeInterval: WTTimeInterval))&ts=\(WTTimeInterval)"
+        // 2、发送请求
+        request(.GET, urlString: urlString418, parameters: nil) { (result, error) in
+            
+            self.handleDictBlock(result, error, finished)
+            
+        }
+    }
+    
+    // MARK: 根据room_id查询出直播详情信息  420
+    func loadHomeLiveDetailData420(room_id: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
+    {
+        
+        let urlString420 = "http://live.bilibili.com/AppRoom/index?actionKey=appkey&appkey=\(APP_KEY)&build=3300&device=phone&platform=ios&room_id=\(room_id)&sign=\(WTBilibiliTool.encodeHomeLiveDetailSign420(room_id, timeInterval: WTTimeInterval))&ts=\(WTTimeInterval)"
         
         // 2、发送请求
         request(.GET, urlString: urlString420, parameters: nil) { (result, error) in
@@ -140,7 +152,7 @@ extension NetworkTools
         }
     }
     
-    // 根据cid获取直播地址
+    // MARK: 根据cid获取直播地址
     func getLivePlayerURL(cid: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
     {
         // 1、url
