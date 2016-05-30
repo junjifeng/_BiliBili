@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yuQ-E1-Fgs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yuQ-E1-Fgs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCt-Ai-92H">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                <rect key="frame" x="0.0" y="-64" width="600" height="210"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="PAB-YT-HVJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbL-Mr-CgT">
-                                <rect key="frame" x="0.0" y="210" width="600" height="85"/>
+                                <rect key="frame" x="0.0" y="146" width="600" height="85"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="QPr-Es-SeC"/>
@@ -35,7 +35,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="XCt-Ai-92H" secondAttribute="trailing" id="EqH-MJ-hnW"/>
-                            <constraint firstItem="XCt-Ai-92H" firstAttribute="top" secondItem="Nao-A5-21A" secondAttribute="top" id="I4R-Ti-Lhx"/>
+                            <constraint firstItem="XCt-Ai-92H" firstAttribute="top" secondItem="Nao-A5-21A" secondAttribute="top" constant="-64" id="I4R-Ti-Lhx"/>
                             <constraint firstAttribute="trailing" secondItem="nbL-Mr-CgT" secondAttribute="trailing" id="Ik4-W2-3zf"/>
                             <constraint firstItem="nbL-Mr-CgT" firstAttribute="top" secondItem="XCt-Ai-92H" secondAttribute="bottom" id="Oto-gr-WN2"/>
                             <constraint firstItem="nbL-Mr-CgT" firstAttribute="leading" secondItem="Nao-A5-21A" secondAttribute="leading" id="WAs-eW-n2j"/>
@@ -43,8 +43,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="liveDetailVerticalPlayerContentView" destination="XCt-Ai-92H" id="isk-oE-NOF"/>
                         <outlet property="userInfoContentView" destination="nbL-Mr-CgT" id="vUs-PG-wbu"/>
+                        <outlet property="verticalPlayerContentView" destination="XCt-Ai-92H" id="RO9-Lc-kGk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEc-qS-mi5" userLabel="First Responder" sceneMemberID="firstResponder"/>

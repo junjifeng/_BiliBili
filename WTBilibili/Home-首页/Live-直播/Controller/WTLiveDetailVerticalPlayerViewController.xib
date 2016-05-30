@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WTLiveDetailVerticalPlayerViewController" customModule="WTBilibili" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="CVf-dB-EhL" id="fn6-5d-fSD"/>
+                <outlet property="playBeforeView" destination="a7M-6J-CRM" id="vuB-ZB-rWV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="32s-ex-QVd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CVf-dB-EhL">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7M-6J-CRM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQE-hQ-hTT">
+                            <rect key="frame" x="510" y="64" width="60" height="30"/>
+                            <state key="normal" title="复制信息">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="qQE-hQ-hTT" firstAttribute="top" secondItem="a7M-6J-CRM" secondAttribute="top" constant="64" id="Q9W-gM-NGw"/>
+                        <constraint firstAttribute="trailing" secondItem="qQE-hQ-hTT" secondAttribute="trailing" constant="30" id="vS2-3V-gH5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="a7M-6J-CRM" secondAttribute="bottom" id="7Ec-mg-uDT"/>
+                <constraint firstItem="CVf-dB-EhL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Euj-ZQ-P8f"/>
+                <constraint firstItem="a7M-6J-CRM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZdV-Dk-m0m"/>
+                <constraint firstItem="a7M-6J-CRM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bYY-W3-qBc"/>
+                <constraint firstItem="CVf-dB-EhL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dyp-Cl-HG1"/>
+                <constraint firstAttribute="trailing" secondItem="a7M-6J-CRM" secondAttribute="trailing" id="ltq-TJ-iM3"/>
+                <constraint firstAttribute="bottom" secondItem="CVf-dB-EhL" secondAttribute="bottom" id="nWG-Z3-88f"/>
+                <constraint firstAttribute="trailing" secondItem="CVf-dB-EhL" secondAttribute="trailing" id="wcL-Uq-NYw"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

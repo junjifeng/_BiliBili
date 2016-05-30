@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import SwiftyJSON
 
 enum WTRequestMethod: String {
     case GET = "GET"
@@ -153,17 +154,28 @@ extension NetworkTools
     }
     
     // MARK: 根据cid获取直播地址
-    func getLivePlayerURL(cid: Int, finished: (result: [String: AnyObject]?, error: NSError?) -> ())
+    func getLivePlayerURL(cid: Int, finished: (result: String?, error: NSError?) -> ())
     {
         // 1、url
         let urlString = "http://live.bilibili.com/api/playurl?player=1&quality=0&cid=\(cid)"
         
         // 2、发送请求
         // manager.responseSerializer = [AFHTTPResponseSerializer serializer]
-        self.responseSerializer = AFHTTPResponseSerializer()
+//        self.responseSerializer = AFHTTPResponseSerializer()
         
         request(.GET, urlString: urlString, parameters: nil) { (result, error) in
-            print("result:\(result)")
+            
+            // 2.1、错误检验
+            if error != nil
+            {
+                finished(result: nil, error: error)
+                return
+            }
+            
+            let json = JSON(result!)
+            let url = json["durl"][0]["url"].string
+            
+            finished(result: url, error: nil)
         }
     }
 }

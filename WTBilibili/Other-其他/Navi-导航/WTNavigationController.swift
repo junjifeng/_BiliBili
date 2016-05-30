@@ -20,7 +20,8 @@ class WTNavigationController: UINavigationController {
         
         if childViewControllers.count > 0
         {
-            hidesBottomBarWhenPushed = true
+            viewController.navigationController?.setNavigationBarHidden(true, animated: false)
+            viewController.hidesBottomBarWhenPushed = true
         }
         
         super.pushViewController(viewController, animated: animated)

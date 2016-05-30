@@ -1,71 +1,77 @@
 //
-//  WTLiveVerticalPlayerView.swift
+//  WTLiveDetailVerticalPlayerViewController.swift
 //  WTBilibili
 //
-//  Created by 耿杰 on 16/5/27.
+//  Created by 无头骑士 GJ on 16/5/29.
 //  Copyright © 2016年 无头骑士 GJ. All rights reserved.
-//  直播详情页面的横屏播放器
+//
 
 import UIKit
 
-class WTLiveDetailVerticalPlayerView: UIView {
-    
-    // MARK: - 拖线的控件
-    /// 占位View
-    @IBOutlet weak var contentView: UIView!
-    
+class WTLiveDetailVerticalPlayerViewController: UIViewController {
+
     // MARK: - 属性
     /// 播放器
     var player: IJKMediaPlayback?
-
-    /// 播放URL
+    
+    @IBOutlet weak var playBeforeView: UIView!
+    @IBOutlet weak var contentView: UIView!
     var url: NSURL?{
         didSet{
-
-            // 1、创建播放器
-            player = IJKFFMoviePlayerController(contentURL: url, withOptions: nil)
             
-            guard let playerTemp = player else
+            guard let urlTemp = url else
             {
                 return
             }
             
-            self.contentView = playerTemp.view
+            player = IJKFFMoviePlayerController(contentURL: urlTemp, withOptions: nil)
             
-            player?.prepareToPlay()
+            let playerView = player?.view
+            playerView!.frame = view.bounds
+            contentView.addSubview(playerView!)
+            player?.scalingMode = IJKMPMovieScalingMode.AspectFit
             
+            if self.player?.isPlaying() == false
+            {
+                self.player?.prepareToPlay()
+            }
         }
     }
     
-    // MARK: - 系统回调函数
-    override func awakeFromNib() {
-        
-        // 添加通知
-        setupNotification()
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+
+        installMovieNotificationObservers()
     }
     
     deinit{
-        
-        NSNotificationCenter.defaultCenter().removeObserver(self)
+        player?.shutdown()
     }
+    /*
+     - (void)loadStateDidChange:(NSNotification*)notification {
+     IJKMPMovieLoadState loadState = _player.loadState;
+     
+     if ((loadState & IJKMPMovieLoadStatePlaythroughOK) != 0) {
+     NSLog(@"LoadStateDidChange: IJKMovieLoadStatePlayThroughOK: %d\n",(int)loadState);
+     }else if ((loadState & IJKMPMovieLoadStateStalled) != 0) {
+     NSLog(@"loadStateDidChange: IJKMPMovieLoadStateStalled: %d\n", (int)loadState);
+     } else {
+     NSLog(@"loadStateDidChange: ???: %d\n", (int)loadState);
+     }
+     }
+    */
 }
 
 // MARK: - 自定义函数
-extension WTLiveDetailVerticalPlayerView
+extension WTLiveDetailVerticalPlayerViewController
 {
-    // MARK: 快速创建方法
-    static func liveDetailVerticalPlayerView() -> WTLiveDetailVerticalPlayerView
-    {
-        return NSBundle.mainBundle().loadNibNamed("WTLiveDetailVerticalPlayerView", owner: nil, options: nil).last as! WTLiveDetailVerticalPlayerView
-    }
-    
-    // MARK: 注册通知
-    private func setupNotification()
+    private func installMovieNotificationObservers()
     {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(loadStateDidChange(_:)), name: IJKMPMoviePlayerLoadStateDidChangeNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(moviePlayBackFinish(_:)), name: IJKMPMoviePlayerPlaybackDidFinishNotification, object: nil)
-    
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(mediaIsPreparedToPlayDidChange(_:)), name: IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification, object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(moviePlayBackStateDidChange(_:)), name: IJKMPMoviePlayerPlaybackStateDidChangeNotification, object: nil)
@@ -73,7 +79,7 @@ extension WTLiveDetailVerticalPlayerView
 }
 
 // MARK: - 事件
-extension WTLiveDetailVerticalPlayerView
+extension WTLiveDetailVerticalPlayerViewController
 {
     @objc private func loadStateDidChange(noti: NSNotification)
     {
@@ -82,6 +88,7 @@ extension WTLiveDetailVerticalPlayerView
         if loadState!.contains(IJKMPMovieLoadState.PlaythroughOK)
         {
             WTLog("LoadStateDidChange: IJKMovieLoadStatePlayThroughOK: \(loadState)")
+            playBeforeView.hidden = true
         }
         else if loadState!.contains(IJKMPMovieLoadState.Stalled)
         {
@@ -101,7 +108,7 @@ extension WTLiveDetailVerticalPlayerView
         case IJKMPMovieFinishReason.PlaybackEnded:
             
             WTLog("playbackStateDidChange: IJKMPMovieFinishReasonPlaybackEnded: \(reason)\n")
-        
+            
         case IJKMPMovieFinishReason.UserExited:
             
             WTLog("playbackStateDidChange: IJKMPMovieFinishReasonUserExited: \(reason)\n");
@@ -117,18 +124,18 @@ extension WTLiveDetailVerticalPlayerView
     {
         WTLog("mediaIsPrepareToPlayDidChange\n");
     }
-
+    
     @objc private func moviePlayBackStateDidChange(noti: NSNotification)
     {
 //        guard let playerTemp = player else
 //        {
 //            return
 //        }
-        
+
 //        let backRate = playerTemp.playbackRate as! IJKMPMoviePlaybackState
 //        switch backRate {
 //        case IJKMPMoviePlaybackState.Stopped:
-//            
+//
 //            WTLog("IJKMPMoviePlayBackStateDidChange \(playerTemp.playbackState): stoped");
 //        }
     }

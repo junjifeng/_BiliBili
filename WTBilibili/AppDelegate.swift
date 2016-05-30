@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 1、创建窗口、设置根控制器，显示窗口
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = WTTabBarController()
+        window?.rootViewController = UINavigationController(rootViewController: WTLoginViewController())
         window?.makeKeyAndVisible()
         
         // 2、设置全局tabBar的颜色

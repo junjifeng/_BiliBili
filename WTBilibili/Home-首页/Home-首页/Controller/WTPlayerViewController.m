@@ -31,7 +31,7 @@
     [super viewDidLoad];
     
     //直播视频
-    //self.url = [NSURL URLWithString:@"http://live-play.acgvideo.com/live/697/live_638185_9308710.flv"];
+    self.url = [NSURL URLWithString:@"http://live-play.acgvideo.com/live/861/live_6197764_7916810.flv?wsSecret=3e390fc2ab6ae23580cb96239e87c9ab&wsTime=57235f1e"];
     self.player = [[IJKFFMoviePlayerController alloc] initWithContentURL: self.url withOptions: nil];
     
     UIView *playerView = [self.player view];
@@ -75,10 +75,10 @@
 }
 
 #pragma mark - 只允许横屏
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskLandscapeLeft;
-}
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations
+//{
+//    return UIInterfaceOrientationMaskLandscapeLeft;
+//}
 
 #pragma Selector func
 - (void)loadStateDidChange:(NSNotification*)notification {

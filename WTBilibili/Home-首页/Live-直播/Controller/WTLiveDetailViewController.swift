@@ -24,7 +24,9 @@ class WTLiveDetailViewController: UIViewController {
     @IBOutlet weak var userInfoContentView: UIView!
 
     /// 竖屏播放器View
-    var liveDetailVerticalPlayerView = WTLiveDetailVerticalPlayerView.liveDetailVerticalPlayerView()
+    //var liveDetailVerticalPlayerView = WTLiveDetailVerticalPlayerView.liveDetailVerticalPlayerView()
+    
+    var liveDetailVerticalPlayerVC = WTLiveDetailVerticalPlayerViewController()
     
     /// 用户信息View
     var liveDetailUserInfoView = WTLiveDetailUserInfoView.liveDetailUserInfoView()
@@ -39,6 +41,8 @@ class WTLiveDetailViewController: UIViewController {
         
         // 加载数据
         loadData()
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidLayoutSubviews()
@@ -46,8 +50,18 @@ class WTLiveDetailViewController: UIViewController {
         super.viewDidLayoutSubviews()
         
         // 1、设置Frame
-        liveDetailVerticalPlayerView.frame = verticalPlayerContentView.bounds
+        liveDetailVerticalPlayerVC.view.frame = verticalPlayerContentView.bounds
         liveDetailUserInfoView.frame = userInfoContentView.bounds
+    }
+    
+    override func viewWillDisappear(animated: Bool)
+    {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
     }
 }
 
@@ -58,8 +72,11 @@ extension WTLiveDetailViewController
     private func setupUI()
     {
         // 1、添加子控件
-        verticalPlayerContentView.addSubview(liveDetailVerticalPlayerView)
+        verticalPlayerContentView.addSubview(liveDetailVerticalPlayerVC.view)
         userInfoContentView.addSubview(liveDetailUserInfoView)
+        addChildViewController(liveDetailVerticalPlayerVC)
+        
+        
     }
     
     // MARK: 加载数据
@@ -89,8 +106,18 @@ extension WTLiveDetailViewController
             self.liveDetailItem = WTLiveDetailItem(dict: result!)
             
             // 3、更新UI
-            // 设置播放器的URL
-            self.liveDetailVerticalPlayerView.url = WTBilibiliTool.encodeLivePlayerUrl(self.liveDetailItem.schedule.cid)
+            // 获取直播播放的URL
+            NetworkTools.shareInstance.getLivePlayerURL(self.liveDetailItem.schedule.cid, finished: { (result, error) in
+                
+                if error != nil
+                {
+                    WTLog("error:\(error)")
+                    return 
+                }
+                
+                self.liveDetailVerticalPlayerVC.url = NSURL(string: result!)
+                //self.playerVC.url = NSURL(string: result!)
+            })
             
             // 更新用户信息的View的数据
             self.liveDetailUserInfoView.liveDetailItem = self.liveDetailItem
