@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		304699BC1CF7DA0A009C0F9B /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */; };
 		30496F861CD9896300C8B5E6 /* WTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */; };
 		30496F871CD9896300C8B5E6 /* WTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */; };
 		30496F8A1CD9896300C8B5E6 /* WTSomeDramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */; };
 		30496F911CD989B600C8B5E6 /* WTCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F8D1CD989B600C8B5E6 /* WTCategoryViewController.swift */; };
 		30496F971CD9CDFF00C8B5E6 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */; };
-		46C192C357021F10FE056CED /* Pods_WTBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */; };
 		B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */; };
 		B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66E25F21CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib */; };
-		B6A4284E1CD8D82E0033E65B /* WTMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */; };
+		B699B8531CFF14B300AFB98E /* WTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B8521CFF14B300AFB98E /* WTLabel.swift */; };
+		B699B8541CFF191000AFB98E /* HY-QiHei50.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */; };
+		B699B8681CFF2C8000AFB98E /* WTMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */; };
+		B699B8691CFF2C8000AFB98E /* WTMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B85C1CFF2C8000AFB98E /* WTMineViewController.swift */; };
+		B699B86A1CFF2C8000AFB98E /* WTMineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B85E1CFF2C8000AFB98E /* WTMineItem.swift */; };
+		B699B86B1CFF2C8000AFB98E /* WTMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B8601CFF2C8000AFB98E /* WTMineCell.swift */; };
+		B699B86C1CFF2C8000AFB98E /* WTMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */; };
+		B699B86D1CFF2C8000AFB98E /* WTMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */; };
+		B699B8701CFF2C9F00AFB98E /* WTRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */; };
+		B699B8711CFF2C9F00AFB98E /* WTRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */; };
 		B6A428501CD8DB4A0033E65B /* WTDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4284F1CD8DB4A0033E65B /* WTDiscoverViewController.swift */; };
 		B6A4286F1CD8F28C0033E65B /* WTStartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4286D1CD8F28C0033E65B /* WTStartupViewController.swift */; };
 		B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A4286E1CD8F28C0033E65B /* WTStartupViewController.xib */; };
@@ -25,6 +32,7 @@
 		B6B148D71CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */; };
 		B6B148DA1CFC8A380020CB89 /* WTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B148D81CFC8A380020CB89 /* WTLoginViewController.swift */; };
 		B6B148DB1CFC8A380020CB89 /* WTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B148D91CFC8A380020CB89 /* WTLoginViewController.xib */; };
+		B6C457F91CFDD2FC00F419A7 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */; };
 		B6D4F17B1CD8CAFD009B39E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */; };
 		B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1811CD8CAFD009B39E0 /* Assets.xcassets */; };
 		B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1831CD8CAFD009B39E0 /* LaunchScreen.storyboard */; };
@@ -69,22 +77,28 @@
 		B6DA3A5D1CE4EF41006384A1 /* WTVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A521CE4EF41006384A1 /* WTVideoListCell.swift */; };
 		B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DA3A531CE4EF41006384A1 /* WTVideoListCell.xib */; };
 		B6DA3A5F1CE4EF41006384A1 /* WTVideoListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A541CE4EF41006384A1 /* WTVideoListCollectionView.swift */; };
-		B6DA3A611CE4EF88006384A1 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DA3A601CE4EF88006384A1 /* IJKMediaFramework.framework */; };
 		B6DA3A631CE4EF9E006384A1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DA3A621CE4EF9E006384A1 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTHomeViewController.swift; sourceTree = "<group>"; };
 		30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTHomeViewController.xib; sourceTree = "<group>"; };
 		30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSomeDramaViewController.swift; sourceTree = "<group>"; };
 		30496F8D1CD989B600C8B5E6 /* WTCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCategoryViewController.swift; sourceTree = "<group>"; };
 		30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		6698BF783E60EC7413211644 /* Pods-WTBilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTBilibili/Pods-WTBilibili.release.xcconfig"; sourceTree = "<group>"; };
-		7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveDetailUserInfoView.swift; sourceTree = "<group>"; };
 		B66E25F21CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLiveDetailUserInfoView.xib; sourceTree = "<group>"; };
-		B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineViewController.swift; sourceTree = "<group>"; };
+		B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HY-QiHei50.ttf"; sourceTree = "<group>"; };
+		B699B8521CFF14B300AFB98E /* WTLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLabel.swift; sourceTree = "<group>"; };
+		B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTMineViewController.storyboard; sourceTree = "<group>"; };
+		B699B85C1CFF2C8000AFB98E /* WTMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineViewController.swift; sourceTree = "<group>"; };
+		B699B85E1CFF2C8000AFB98E /* WTMineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineItem.swift; sourceTree = "<group>"; };
+		B699B8601CFF2C8000AFB98E /* WTMineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineCell.swift; sourceTree = "<group>"; };
+		B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineHeaderView.swift; sourceTree = "<group>"; };
+		B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMineHeaderView.xib; sourceTree = "<group>"; };
+		B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTRegisterViewController.swift; sourceTree = "<group>"; };
+		B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTRegisterViewController.xib; sourceTree = "<group>"; };
 		B6A4284F1CD8DB4A0033E65B /* WTDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTDiscoverViewController.swift; sourceTree = "<group>"; };
 		B6A4286D1CD8F28C0033E65B /* WTStartupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTStartupViewController.swift; sourceTree = "<group>"; };
 		B6A4286E1CD8F28C0033E65B /* WTStartupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTStartupViewController.xib; sourceTree = "<group>"; };
@@ -93,13 +107,13 @@
 		B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLiveDetailVerticalPlayerViewController.xib; sourceTree = "<group>"; };
 		B6B148D81CFC8A380020CB89 /* WTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLoginViewController.swift; sourceTree = "<group>"; };
 		B6B148D91CFC8A380020CB89 /* WTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLoginViewController.xib; sourceTree = "<group>"; };
+		B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		B6D4F1771CD8CAFD009B39E0 /* WTBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D4F1811CD8CAFD009B39E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D4F1841CD8CAFD009B39E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6D4F1861CD8CAFD009B39E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D4F1A61CD8CDFD009B39E0 /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
-		B6D4F1A81CD8CE3B009B39E0 /* HYQiH18030F50.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = HYQiH18030F50.ttf; path = ../HYQiH18030F50.ttf; sourceTree = "<group>"; };
 		B6D4F1C21CD8D1DA009B39E0 /* WTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTabBarController.swift; sourceTree = "<group>"; };
 		B6D4F1C61CD8D29B009B39E0 /* WTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTNavigationController.swift; sourceTree = "<group>"; };
 		B6DA39E81CE4EAC4006384A1 /* WTBilibili-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTBilibili-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -142,7 +156,6 @@
 		B6DA3A521CE4EF41006384A1 /* WTVideoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTVideoListCell.swift; sourceTree = "<group>"; };
 		B6DA3A531CE4EF41006384A1 /* WTVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTVideoListCell.xib; sourceTree = "<group>"; };
 		B6DA3A541CE4EF41006384A1 /* WTVideoListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTVideoListCollectionView.swift; sourceTree = "<group>"; };
-		B6DA3A601CE4EF88006384A1 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		B6DA3A621CE4EF9E006384A1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BA8A2A7C4F10B984855F9083 /* Pods-WTBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTBilibili/Pods-WTBilibili.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,10 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C457F91CFDD2FC00F419A7 /* IJKMediaFramework.framework in Frameworks */,
 				B6DA3A631CE4EF9E006384A1 /* libz.tbd in Frameworks */,
-				46C192C357021F10FE056CED /* Pods_WTBilibili.framework in Frameworks */,
-				B6DA3A611CE4EF88006384A1 /* IJKMediaFramework.framework in Frameworks */,
-				304699BC1CF7DA0A009C0F9B /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,10 +322,8 @@
 		3235C7E918C28D4EF0A5B504 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				304699BB1CF7DA0A009C0F9B /* IJKMediaFramework.framework */,
+				B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */,
 				B6DA3A621CE4EF9E006384A1 /* libz.tbd */,
-				B6DA3A601CE4EF88006384A1 /* IJKMediaFramework.framework */,
-				7727A0009F0B8164287C78B2 /* Pods_WTBilibili.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -328,20 +337,91 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B6A428481CD8D81C0033E65B /* Mine-我的 */ = {
+		B699B8591CFF2C8000AFB98E /* Mine-我的 */ = {
 			isa = PBXGroup;
 			children = (
-				B6A428491CD8D81C0033E65B /* Controller */,
+				B699B85A1CFF2C8000AFB98E /* Controller */,
+				B699B85D1CFF2C8000AFB98E /* Model */,
+				B699B85F1CFF2C8000AFB98E /* View */,
+				B699B8631CFF2C8000AFB98E /* ViewModel */,
 			);
 			path = "Mine-我的";
 			sourceTree = "<group>";
 		};
-		B6A428491CD8D81C0033E65B /* Controller */ = {
+		B699B85A1CFF2C8000AFB98E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B6A4284D1CD8D82E0033E65B /* WTMineViewController.swift */,
+				B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */,
+				B699B85C1CFF2C8000AFB98E /* WTMineViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B699B85D1CFF2C8000AFB98E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B699B85E1CFF2C8000AFB98E /* WTMineItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B699B85F1CFF2C8000AFB98E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B699B8601CFF2C8000AFB98E /* WTMineCell.swift */,
+				B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */,
+				B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B699B8631CFF2C8000AFB98E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B699B8641CFF2C8000AFB98E /* Register-注册 */ = {
+			isa = PBXGroup;
+			children = (
+				B699B8651CFF2C8000AFB98E /* Controller */,
+				B699B8661CFF2C8000AFB98E /* Model */,
+				B699B8671CFF2C8000AFB98E /* View */,
+			);
+			path = "Register-注册";
+			sourceTree = "<group>";
+		};
+		B699B8651CFF2C8000AFB98E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */,
+				B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B699B8661CFF2C8000AFB98E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B699B8671CFF2C8000AFB98E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A428481CD8D81C0033E65B /* Mine-我的 */ = {
+			isa = PBXGroup;
+			children = (
+				B699B8591CFF2C8000AFB98E /* Mine-我的 */,
+				B699B8641CFF2C8000AFB98E /* Register-注册 */,
+			);
+			path = "Mine-我的";
 			sourceTree = "<group>";
 		};
 		B6A428511CD8DCE00033E65B /* Startup-启动 */ = {
@@ -470,8 +550,8 @@
 		B6D4F1A41CD8CDF6009B39E0 /* Resource-资源 */ = {
 			isa = PBXGroup;
 			children = (
+				B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */,
 				B6D4F1A51CD8CDFD009B39E0 /* home_init */,
-				B6D4F1A81CD8CE3B009B39E0 /* HYQiH18030F50.ttf */,
 			);
 			path = "Resource-资源";
 			sourceTree = "<group>";
@@ -507,6 +587,7 @@
 				30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */,
 				B6DA3A3B1CE4EE73006384A1 /* WTBilibiliTool.swift */,
 				B6DA39E81CE4EAC4006384A1 /* WTBilibili-Bridging-Header.h */,
+				B699B8521CFF14B300AFB98E /* WTLabel.swift */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -674,7 +755,7 @@
 				TargetAttributes = {
 					B6D4F1761CD8CAFC009B39E0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 384BYGYQSF;
+						DevelopmentTeam = ZD2FW4SQ72;
 					};
 				};
 			};
@@ -701,13 +782,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B699B8541CFF191000AFB98E /* HY-QiHei50.ttf in Resources */,
 				B6B148DB1CFC8A380020CB89 /* WTLoginViewController.xib in Resources */,
 				B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */,
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */,
 				B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */,
+				B699B8681CFF2C8000AFB98E /* WTMineViewController.storyboard in Resources */,
 				B6DA3A231CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard in Resources */,
+				B699B86D1CFF2C8000AFB98E /* WTMineHeaderView.xib in Resources */,
 				B6DA3A311CE4EDF0006384A1 /* WTEntranceCell.xib in Resources */,
 				B6B148D71CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib in Resources */,
 				B6DA3A351CE4EDF0006384A1 /* WTLiveListCell.xib in Resources */,
@@ -715,6 +799,7 @@
 				B6D4F1A71CD8CDFD009B39E0 /* config in Resources */,
 				B6DA39F41CE4EDA1006384A1 /* WTPlayerViewController.storyboard in Resources */,
 				B6DA3A5C1CE4EF41006384A1 /* WTRecommendCell.xib in Resources */,
+				B699B8711CFF2C9F00AFB98E /* WTRegisterViewController.xib in Resources */,
 				B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -777,7 +862,6 @@
 				B6DA3A331CE4EDF0006384A1 /* WTLiveHeaderView.swift in Sources */,
 				B6DA3A2D1CE4EDF0006384A1 /* WTOwnerItem.swift in Sources */,
 				B6DA3A5A1CE4EF41006384A1 /* WTBannerHeaderView.swift in Sources */,
-				B6A4284E1CD8D82E0033E65B /* WTMineViewController.swift in Sources */,
 				B6DA3A5B1CE4EF41006384A1 /* WTRecommendCell.swift in Sources */,
 				B6B148D51CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift in Sources */,
 				B6DA3A2E1CE4EDF0006384A1 /* WTPartitionItem.swift in Sources */,
@@ -785,10 +869,14 @@
 				B6DA3A271CE4EDF0006384A1 /* WTEntranceIconsItem.swift in Sources */,
 				B6DA3A441CE4EE9C006384A1 /* UIImage-Extension.swift in Sources */,
 				B6DA3A2B1CE4EDF0006384A1 /* WTLiveDetailScheduleItem.swift in Sources */,
+				B699B86C1CFF2C8000AFB98E /* WTMineHeaderView.swift in Sources */,
+				B699B8691CFF2C8000AFB98E /* WTMineViewController.swift in Sources */,
+				B699B8701CFF2C9F00AFB98E /* WTRegisterViewController.swift in Sources */,
 				B6DA3A241CE4EDF0006384A1 /* WTLiveDetailViewController.swift in Sources */,
 				30496F971CD9CDFF00C8B5E6 /* NetworkTools.swift in Sources */,
 				B6DA3A2A1CE4EDF0006384A1 /* WTLiveDetailMetaItem.swift in Sources */,
 				B6B148DA1CFC8A380020CB89 /* WTLoginViewController.swift in Sources */,
+				B699B86B1CFF2C8000AFB98E /* WTMineCell.swift in Sources */,
 				B6DA3A281CE4EDF0006384A1 /* WTIconItem.swift in Sources */,
 				B6DA3A2C1CE4EDF0006384A1 /* WTLiveItem.swift in Sources */,
 				B6DA39F31CE4EDA1006384A1 /* WTPlayerViewController.m in Sources */,
@@ -807,7 +895,9 @@
 				B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */,
 				B6DA3A291CE4EDF0006384A1 /* WTLiveDetailItem.swift in Sources */,
 				B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */,
+				B699B86A1CFF2C8000AFB98E /* WTMineItem.swift in Sources */,
 				B6DA3A3C1CE4EE73006384A1 /* WTBilibiliTool.swift in Sources */,
+				B699B8531CFF14B300AFB98E /* WTLabel.swift in Sources */,
 				B6DA3A321CE4EDF0006384A1 /* WTEntranceIconButton.swift in Sources */,
 				B6DA3A361CE4EDF0006384A1 /* WTLiveListCollectionView.swift in Sources */,
 				B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */,
@@ -934,8 +1024,12 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WTBilibili/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wutouqishi.WTBilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -959,8 +1053,12 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = WTBilibili/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wutouqishi.WTBilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

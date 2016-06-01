@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_header" translatesAutoresizingMaskIntoConstraints="NO" id="HKl-qt-hu9">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                    <rect key="frame" x="0.0" y="64" width="600" height="90"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="90" id="eNh-Ck-7Ae"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAD-Gl-vnO">
-                    <rect key="frame" x="0.0" y="90" width="600" height="90"/>
+                    <rect key="frame" x="0.0" y="154" width="600" height="90"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="在这里输入手机号或者邮箱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="BUa-4u-Zhy">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
@@ -64,7 +64,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDb-8X-3TX">
-                    <rect key="frame" x="22" y="188" width="273" height="30"/>
+                    <rect key="frame" x="22" y="252" width="273" height="30"/>
                     <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="注册">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,7 +74,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBs-Ue-Z3r">
-                    <rect key="frame" x="305" y="188" width="273" height="30"/>
+                    <rect key="frame" x="305" y="252" width="273" height="30"/>
                     <color key="backgroundColor" red="0.8666666666666667" green="0.59215686274509804" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="登录">
                         <color key="titleColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,7 +89,7 @@
                 <constraint firstAttribute="trailing" secondItem="HKl-qt-hu9" secondAttribute="trailing" id="1vJ-Op-2PL"/>
                 <constraint firstAttribute="trailing" secondItem="vAD-Gl-vnO" secondAttribute="trailing" id="243-pi-8Zf"/>
                 <constraint firstItem="VBs-Ue-Z3r" firstAttribute="width" secondItem="aDb-8X-3TX" secondAttribute="width" id="EPW-gT-Z8i"/>
-                <constraint firstItem="HKl-qt-hu9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EgJ-16-sA5"/>
+                <constraint firstItem="HKl-qt-hu9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="EgJ-16-sA5"/>
                 <constraint firstAttribute="trailing" secondItem="VBs-Ue-Z3r" secondAttribute="trailing" constant="22" id="IQV-q1-mPK"/>
                 <constraint firstItem="VBs-Ue-Z3r" firstAttribute="leading" secondItem="aDb-8X-3TX" secondAttribute="trailing" constant="10" id="Rbk-ct-Kiv"/>
                 <constraint firstItem="vAD-Gl-vnO" firstAttribute="top" secondItem="HKl-qt-hu9" secondAttribute="bottom" id="Tl5-Lh-lWZ"/>

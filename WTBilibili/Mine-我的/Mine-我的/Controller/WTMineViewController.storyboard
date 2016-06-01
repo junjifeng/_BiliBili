@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SIi-Se-QRO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Mine View Controller-->
+        <scene sceneID="oN2-d7-c9g">
+            <objects>
+                <tableViewController id="SIi-Se-QRO" customClass="WTMineViewController" customModule="WTBilibili" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="82" sectionHeaderHeight="18" sectionFooterHeight="18" id="aNP-8J-dDp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="mineCellIdentifier" rowHeight="45" id="6Ff-cS-ySW" customClass="WTMineCell" customModule="WTBilibili" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="49.5" width="600" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Ff-cS-ySW" id="f1s-pa-H71">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="44.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYa-Lf-gwO">
+                                            <rect key="frame" x="20" y="10" width="25" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="IZS-dF-wTb"/>
+                                                <constraint firstAttribute="width" constant="25" id="jxz-5h-v17"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKb-G9-N5Y" customClass="WTLabel" customModule="WTBilibili" customModuleProvider="target">
+                                            <rect key="frame" x="60" y="13" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tYa-Lf-gwO" firstAttribute="centerY" secondItem="f1s-pa-H71" secondAttribute="centerY" id="Uzv-OP-R0H"/>
+                                        <constraint firstItem="SKb-G9-N5Y" firstAttribute="centerY" secondItem="f1s-pa-H71" secondAttribute="centerY" id="Xx2-fT-0gV"/>
+                                        <constraint firstItem="SKb-G9-N5Y" firstAttribute="leading" secondItem="f1s-pa-H71" secondAttribute="leading" constant="60" id="cdw-L9-eH9"/>
+                                        <constraint firstItem="tYa-Lf-gwO" firstAttribute="leading" secondItem="f1s-pa-H71" secondAttribute="leading" constant="20" id="m4K-t4-uyb"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="mineImageV" destination="tYa-Lf-gwO" id="qR1-Ns-xqs"/>
+                                    <outlet property="mineTitleLabel" destination="SKb-G9-N5Y" id="2LP-7n-Z7U"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SIi-Se-QRO" id="Flx-oH-n3J"/>
+                            <outlet property="delegate" destination="SIi-Se-QRO" id="Fqx-UR-89y"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QwG-Qc-IP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="-94"/>
+        </scene>
+    </scenes>
+</document>

@@ -16,12 +16,13 @@ class WTNavigationController: UINavigationController {
         super.viewDidLoad()
     }
     
-    override func pushViewController(viewController: UIViewController, animated: Bool) {
+    override func pushViewController(viewController: UIViewController, animated: Bool){
         
         if childViewControllers.count > 0
         {
             viewController.navigationController?.setNavigationBarHidden(true, animated: false)
             viewController.hidesBottomBarWhenPushed = true
+            
         }
         
         super.pushViewController(viewController, animated: animated)

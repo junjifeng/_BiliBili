@@ -39,5 +39,9 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HY-QiHei50.ttf</string>
+	</array>
 </dict>
 </plist>

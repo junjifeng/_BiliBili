@@ -42,7 +42,7 @@ let WTTimeInterval = Int(NSDate().timeIntervalSince1970)
 /// 日志打印
 public func WTLog<T>(message: T, file: String = #file, method: String = #function, line: Int = #line)
 {
-    #if DEBUG
+//    #if DEBUG
         print("\((file as NSString).lastPathComponent):\(line) \(method): \(message)")
-    #endif
+//    #endif
 }

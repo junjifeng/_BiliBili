@@ -36,14 +36,15 @@ extension WTTabBarController
         addOneChildViewController(WTDiscoverViewController(), title: "发现", imageName: "home_discovery_tab")
         
         // 4、我的
-        addOneChildViewController(WTMineViewController(), title: "我的", imageName: "home_home_tab")
+        addOneChildViewController(UIStoryboard(name: "WTMineViewController", bundle: nil).instantiateInitialViewController()!, title: "我的", imageName: "home_home_tab")
+        //addOneChildViewController(WTMineViewController(), title: "我的", imageName: "home_home_tab")
     }
     
     // MARK: 添加一个控制器
     private func addOneChildViewController(viewController: UIViewController, title: String, imageName: String)
     {
         // 1、设置tabBarItem的基本属性
-        viewController.tabBarItem.title = title
+        viewController.title = title
         viewController.tabBarItem.image = UIImage(named: imageName)
         viewController.tabBarItem.selectedImage = UIImage(named: imageName + "_s")
         

@@ -56,6 +56,7 @@ extension WTLoginViewController
     // MARK: 设置UI
     private func setupUI()
     {
+
         // 0、设置导航栏
         setupNav()
         
@@ -78,11 +79,18 @@ extension WTLoginViewController
     {
         title = "登录"
         
+        let closeBtn = UIButton(type: .Custom)
+        closeBtn.tintColor = WTMainColor
+        closeBtn.setBackgroundImage(UIImage(named: "common_close"), forState: .Normal)
+        closeBtn.sizeToFit()
+        closeBtn.addTarget(self, action: #selector(closeBtnClick), forControlEvents: .TouchUpInside)
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: closeBtn)
         
         let forgetPasswordBtn = UIButton(type: .Custom)
-        forgetPasswordBtn.titleLabel?.font = UIFont.systemFontOfSize(14)
+        forgetPasswordBtn.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 14)
         forgetPasswordBtn.setTitle("忘记密码", forState: .Normal)
-        forgetPasswordBtn.setTitleColor(WTColor(r: 158, g: 158, b: 158), forState: .Normal)
+        forgetPasswordBtn.setTitleColor(UIColor(hex: 666666), forState: .Normal)
         forgetPasswordBtn.addTarget(self, action: #selector(forgetPasswordBtnClick), forControlEvents: .TouchUpInside)
         forgetPasswordBtn.sizeToFit()
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: forgetPasswordBtn)
@@ -100,6 +108,11 @@ extension WTLoginViewController
 // MARK: - 事件
 extension WTLoginViewController
 {
+    func closeBtnClick()
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     // MARK: 忘记密码
     func forgetPasswordBtnClick()
     {

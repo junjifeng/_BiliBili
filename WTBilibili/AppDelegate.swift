@@ -17,11 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 1、创建窗口、设置根控制器，显示窗口
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window?.rootViewController = UINavigationController(rootViewController: WTLoginViewController())
+        window?.rootViewController = WTTabBarController()
         window?.makeKeyAndVisible()
         
         // 2、设置全局tabBar的颜色
         UITabBar.appearance().tintColor = WTColor(r: 180, g: 84, b: 112)
+        
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 666666)!, NSFontAttributeName: UIFont.systemFontOfSize(17)]
+        
         
         return true
     }
