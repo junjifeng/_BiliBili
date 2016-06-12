@@ -23,10 +23,12 @@
 		B699B86C1CFF2C8000AFB98E /* WTMineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */; };
 		B699B86D1CFF2C8000AFB98E /* WTMineHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */; };
 		B699B8701CFF2C9F00AFB98E /* WTRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */; };
-		B699B8711CFF2C9F00AFB98E /* WTRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */; };
 		B6A428501CD8DB4A0033E65B /* WTDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4284F1CD8DB4A0033E65B /* WTDiscoverViewController.swift */; };
 		B6A4286F1CD8F28C0033E65B /* WTStartupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4286D1CD8F28C0033E65B /* WTStartupViewController.swift */; };
 		B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6A4286E1CD8F28C0033E65B /* WTStartupViewController.xib */; };
+		B6A530F21D0C499500716FBE /* WTRegisterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A530F11D0C499500716FBE /* WTRegisterViewController.storyboard */; };
+		B6A530F41D0C4E2000716FBE /* register_licence.html in Resources */ = {isa = PBXBuildFile; fileRef = B6A530F31D0C4E2000716FBE /* register_licence.html */; };
+		B6A530F71D0C639400716FBE /* WTAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A530F51D0C639400716FBE /* WTAgreementViewController.swift */; };
 		B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B148D21CF75E880020CB89 /* UIColor-Extension.swift */; };
 		B6B148D51CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B148D41CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift */; };
 		B6B148D71CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */; };
@@ -78,6 +80,7 @@
 		B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6DA3A531CE4EF41006384A1 /* WTVideoListCell.xib */; };
 		B6DA3A5F1CE4EF41006384A1 /* WTVideoListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DA3A541CE4EF41006384A1 /* WTVideoListCollectionView.swift */; };
 		B6DA3A631CE4EF9E006384A1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DA3A621CE4EF9E006384A1 /* libz.tbd */; };
+		FAEA143DCEDDF596A524371E /* Pods_WTBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFAF31359A5A3FB5C3F329AA /* Pods_WTBilibili.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,10 +101,12 @@
 		B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTMineHeaderView.swift; sourceTree = "<group>"; };
 		B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMineHeaderView.xib; sourceTree = "<group>"; };
 		B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTRegisterViewController.swift; sourceTree = "<group>"; };
-		B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTRegisterViewController.xib; sourceTree = "<group>"; };
 		B6A4284F1CD8DB4A0033E65B /* WTDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTDiscoverViewController.swift; sourceTree = "<group>"; };
 		B6A4286D1CD8F28C0033E65B /* WTStartupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTStartupViewController.swift; sourceTree = "<group>"; };
 		B6A4286E1CD8F28C0033E65B /* WTStartupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTStartupViewController.xib; sourceTree = "<group>"; };
+		B6A530F11D0C499500716FBE /* WTRegisterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTRegisterViewController.storyboard; sourceTree = "<group>"; };
+		B6A530F31D0C4E2000716FBE /* register_licence.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = register_licence.html; sourceTree = "<group>"; };
+		B6A530F51D0C639400716FBE /* WTAgreementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTAgreementViewController.swift; sourceTree = "<group>"; };
 		B6B148D21CF75E880020CB89 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		B6B148D41CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveDetailVerticalPlayerViewController.swift; sourceTree = "<group>"; };
 		B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLiveDetailVerticalPlayerViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		B6DA3A541CE4EF41006384A1 /* WTVideoListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTVideoListCollectionView.swift; sourceTree = "<group>"; };
 		B6DA3A621CE4EF9E006384A1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BA8A2A7C4F10B984855F9083 /* Pods-WTBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBilibili.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTBilibili/Pods-WTBilibili.debug.xcconfig"; sourceTree = "<group>"; };
+		BFAF31359A5A3FB5C3F329AA /* Pods_WTBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 			files = (
 				B6C457F91CFDD2FC00F419A7 /* IJKMediaFramework.framework in Frameworks */,
 				B6DA3A631CE4EF9E006384A1 /* libz.tbd in Frameworks */,
+				FAEA143DCEDDF596A524371E /* Pods_WTBilibili.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +331,7 @@
 			children = (
 				B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */,
 				B6DA3A621CE4EF9E006384A1 /* libz.tbd */,
+				BFAF31359A5A3FB5C3F329AA /* Pods_WTBilibili.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,7 +404,8 @@
 			isa = PBXGroup;
 			children = (
 				B699B86E1CFF2C9F00AFB98E /* WTRegisterViewController.swift */,
-				B699B86F1CFF2C9F00AFB98E /* WTRegisterViewController.xib */,
+				B6A530F11D0C499500716FBE /* WTRegisterViewController.storyboard */,
+				B6A530F51D0C639400716FBE /* WTAgreementViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -550,6 +559,7 @@
 		B6D4F1A41CD8CDF6009B39E0 /* Resource-资源 */ = {
 			isa = PBXGroup;
 			children = (
+				B6A530F31D0C4E2000716FBE /* register_licence.html */,
 				B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */,
 				B6D4F1A51CD8CDFD009B39E0 /* home_init */,
 			);
@@ -755,7 +765,7 @@
 				TargetAttributes = {
 					B6D4F1761CD8CAFC009B39E0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = ZD2FW4SQ72;
+						DevelopmentTeam = 384BYGYQSF;
 					};
 				};
 			};
@@ -785,6 +795,8 @@
 				B699B8541CFF191000AFB98E /* HY-QiHei50.ttf in Resources */,
 				B6B148DB1CFC8A380020CB89 /* WTLoginViewController.xib in Resources */,
 				B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */,
+				B6A530F41D0C4E2000716FBE /* register_licence.html in Resources */,
+				B6A530F21D0C499500716FBE /* WTRegisterViewController.storyboard in Resources */,
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */,
@@ -799,7 +811,6 @@
 				B6D4F1A71CD8CDFD009B39E0 /* config in Resources */,
 				B6DA39F41CE4EDA1006384A1 /* WTPlayerViewController.storyboard in Resources */,
 				B6DA3A5C1CE4EF41006384A1 /* WTRecommendCell.xib in Resources */,
-				B699B8711CFF2C9F00AFB98E /* WTRegisterViewController.xib in Resources */,
 				B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +877,7 @@
 				B6B148D51CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift in Sources */,
 				B6DA3A2E1CE4EDF0006384A1 /* WTPartitionItem.swift in Sources */,
 				B6DA3A251CE4EDF0006384A1 /* WTLiveViewController.swift in Sources */,
+				B6A530F71D0C639400716FBE /* WTAgreementViewController.swift in Sources */,
 				B6DA3A271CE4EDF0006384A1 /* WTEntranceIconsItem.swift in Sources */,
 				B6DA3A441CE4EE9C006384A1 /* UIImage-Extension.swift in Sources */,
 				B6DA3A2B1CE4EDF0006384A1 /* WTLiveDetailScheduleItem.swift in Sources */,

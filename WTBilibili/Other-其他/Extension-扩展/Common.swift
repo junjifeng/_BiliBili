@@ -34,6 +34,11 @@ let WTHomeTitleBtnNormalColor = WTColor(r: 153, g: 153, b: 153)
 /// 标题按钮选中颜色
 let WTHomeTitleBtnSelectedColor = WTMainColor
 
+/// 注册帐号获取验证码默认颜色
+let WTRegisterGetCodeNormalColor = WTColor(r: 222, g: 105, b: 140)
+/// 注册帐号获取验证码选中颜色
+let WTRegisterGetCodeSelectedColor = WTColor(r: 234, g: 176, b:193)
+
 let WTHomeTableViewBackGroundColor = WTColor(r: 244, g: 244, b: 244)
 
 /// 时间戳

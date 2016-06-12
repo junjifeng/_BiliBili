@@ -20,11 +20,28 @@ class WTNavigationController: UINavigationController {
         
         if childViewControllers.count > 0
         {
+            // 隐藏导航栏和TabBar
             viewController.navigationController?.setNavigationBarHidden(true, animated: false)
             viewController.hidesBottomBarWhenPushed = true
             
+            // 统一设置左侧的返回按钮
+            let leftItem = UIButton(type: .Custom)
+            leftItem.setBackgroundImage(UIImage(named: "common_back"), forState: .Normal)
+            leftItem.sizeToFit()
+            leftItem.addTarget(self, action: #selector(leftItemClick), forControlEvents: .TouchUpInside)
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItem)
         }
         
         super.pushViewController(viewController, animated: animated)
+    }
+}
+
+// MARK: - 事件处理
+extension WTNavigationController
+{
+    // MARK: 返回按钮点击
+    func leftItemClick()
+    {
+        popViewControllerAnimated(true)
     }
 }

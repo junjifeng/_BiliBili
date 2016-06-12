@@ -13,6 +13,7 @@ private let mineCellIdentifier = "mineCellIdentifier"
 class WTMineViewController: UITableViewController {
 
     // MARK: - 控件
+    /// tableView的headerView
     private lazy var headerView: WTMineHeaderView = {
 
         let headerView = WTMineHeaderView.headerView()
@@ -90,11 +91,13 @@ extension WTMineViewController
 // MARK: - WTMineHeaderViewDelegate
 extension WTMineViewController: WTMineHeaderViewDelegate
 {
+    // MARK: 注册
     func headerViewWithRegisterLabelDidClick()
     {
-        
+        let registerVC = UIStoryboard(name: "WTRegisterViewController", bundle: nil).instantiateInitialViewController()!
+        presentViewController(WTNavigationController(rootViewController: registerVC), animated: true, completion: nil)
     }
-    
+    // MARK: 登陆
     func headerViewWithLoginLabelDidClick()
     {
         presentViewController(UINavigationController(rootViewController: WTLoginViewController()), animated: true, completion: nil)

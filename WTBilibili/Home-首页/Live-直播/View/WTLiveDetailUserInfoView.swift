@@ -7,6 +7,7 @@
 //  直播详情页面中用户信息的View
 
 import UIKit
+import SDWebImage
 
 class WTLiveDetailUserInfoView: UIView
 {

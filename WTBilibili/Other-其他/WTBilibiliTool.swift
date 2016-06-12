@@ -7,7 +7,6 @@
 //  bilibili工具类
 
 import UIKit
-import YYCategories
 import Ji
 
 let APP_KEY = "4ebafd7c4951b366"
@@ -41,7 +40,7 @@ extension WTBilibiliTool
     static func encodeHomeLiveDetailSign420(room_id: Int, timeInterval: Int) -> String
     {
         let param = "actionKey=appkey&appkey=\(APP_KEY)&build=3300&device=phone&platform=ios&room_id=\(room_id)&ts=\(timeInterval)\(APP_SECRET)"
-        return param.md5()
+                                                        return param.md5()
     }
 }
 

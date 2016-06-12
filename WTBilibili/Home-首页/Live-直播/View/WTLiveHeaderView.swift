@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import SDCycleScrollView
 import SnapKit
+import SDCycleScrollView
 import SDWebImage
 
 /// headerView的高度
