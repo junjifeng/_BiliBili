@@ -118,7 +118,7 @@
                                     <constraint firstAttribute="trailing" secondItem="XHd-Ld-gf8" secondAttribute="trailing" id="xGQ-ov-L3l"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igq-3w-Eve">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igq-3w-Eve">
                                 <rect key="frame" x="20" y="226" width="560" height="40"/>
                                 <color key="backgroundColor" red="0.87058823529999996" green="0.41176470590000003" blue="0.54901960780000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -128,6 +128,9 @@
                                 <state key="normal" title="获取验证码">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="getCodeBtnClick" destination="kmm-o9-MFe" eventType="touchUpInside" id="paf-nX-Zfe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHd-Lc-jRs">
                                 <rect key="frame" x="0.0" y="274" width="600" height="29"/>
@@ -169,6 +172,7 @@
                     </view>
                     <connections>
                         <outlet property="countryBtn" destination="GCl-Y2-PvH" id="zIG-7k-tZU"/>
+                        <outlet property="countryCodeLabel" destination="ssr-6V-oG5" id="Rty-qQ-qhn"/>
                         <outlet property="getCodeBtn" destination="igq-3w-Eve" id="J3z-5w-NIQ"/>
                         <outlet property="phoneTextF" destination="QaM-uj-Hxb" id="Hdf-Oc-xYQ"/>
                         <outlet property="registerAgreementBtn" destination="dHd-Lc-jRs" id="eZB-cK-pku"/>

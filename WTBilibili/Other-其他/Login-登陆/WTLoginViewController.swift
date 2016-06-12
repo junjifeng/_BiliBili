@@ -78,15 +78,11 @@ extension WTLoginViewController
     private func setupNav()
     {
         title = "登录"
+
+        // 关闭按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem.createCloseItem(self, action: #selector(closeBtnClick))
         
-        let closeBtn = UIButton(type: .Custom)
-        closeBtn.tintColor = WTMainColor
-        closeBtn.setBackgroundImage(UIImage(named: "common_close"), forState: .Normal)
-        closeBtn.sizeToFit()
-        closeBtn.addTarget(self, action: #selector(closeBtnClick), forControlEvents: .TouchUpInside)
-        
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: closeBtn)
-        
+        // 忘记密码
         let forgetPasswordBtn = UIButton(type: .Custom)
         forgetPasswordBtn.titleLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 14)
         forgetPasswordBtn.setTitle("忘记密码", forState: .Normal)
@@ -108,6 +104,7 @@ extension WTLoginViewController
 // MARK: - 事件
 extension WTLoginViewController
 {
+    // MARK: 关闭按钮
     func closeBtnClick()
     {
         dismissViewControllerAnimated(true, completion: nil)

@@ -43,6 +43,8 @@ let WTHomeTableViewBackGroundColor = WTColor(r: 244, g: 244, b: 244)
 
 /// 时间戳
 let WTTimeInterval = Int(NSDate().timeIntervalSince1970)
+/// uuid
+let WTUDID =  (UIDevice.currentDevice().identifierForVendor?.UUIDString)!
 
 /// 日志打印
 public func WTLog<T>(message: T, file: String = #file, method: String = #function, line: Int = #line)

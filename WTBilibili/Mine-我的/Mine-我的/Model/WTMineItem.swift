@@ -14,9 +14,13 @@ class WTMineItem: NSObject
     
     var title: String!
     
-    init(imageName: String, title: String) {
+    var actionBlock: (() -> ())?
+    
+    init(imageName: String, title: String, actionBlock: (() -> ())?) {
+        
         super.init()
         self.imageName = imageName
         self.title = title
+        self.actionBlock = actionBlock
     }
 }

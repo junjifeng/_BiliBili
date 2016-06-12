@@ -13,6 +13,8 @@ class WTRegisterViewController: UIViewController {
     // MARK: - 拖线的属性
     /// 选择国家 Button
     @IBOutlet weak var countryBtn: UIButton!
+    /// 国家代码 +86 Label
+    @IBOutlet weak var countryCodeLabel: UILabel!
     /// 手机号 TextField
     @IBOutlet weak var phoneTextF: UITextField!
     /// 获取验证码 Button
@@ -36,6 +38,9 @@ extension WTRegisterViewController
     {
         title = "注册帐号"
         
+        // 设置导航栏
+        setupNav()
+        
         // 获取验证码按钮
         getCodeBtn.layer.cornerRadius = 2
         getCodeBtn.layer.masksToBounds = true
@@ -50,21 +55,53 @@ extension WTRegisterViewController
         attrText.addAttributes([NSForegroundColorAttributeName: WTMainColor], range: NSRange(location: 17, length: 4))
         registerAgreementBtn.setAttributedTitle(attrText, forState: .Normal)
     }
+    
+    // MARK: 设置导航栏
+    private func setupNav()
+    {
+        // 关闭按钮
+        navigationItem.leftBarButtonItem = UIBarButtonItem.createCloseItem(self, action: #selector(closeBtnClick))
+    }
 }
 
 // MARK: - 事件函数
 extension WTRegisterViewController
 {
+    // MARK: 关闭按钮
+    func closeBtnClick()
+    {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
     // MARK: 手机号输入监听
     func phoneTextFValueChange()
     {
-        // 修改获取验证码的背景颜色 -> 当手机号数为11位时
-        getCodeBtn.backgroundColor = phoneTextF.text?.characters.count == 11 ? WTRegisterGetCodeNormalColor : WTRegisterGetCodeSelectedColor
+        // 修改获取验证码的背景颜色和enabled -> 当手机号数为11位时
+        if phoneTextF.text?.characters.count == 11
+        {
+            getCodeBtn.backgroundColor = WTRegisterGetCodeNormalColor
+            getCodeBtn.enabled = true
+        }
+        else
+        {
+            getCodeBtn.backgroundColor = WTRegisterGetCodeSelectedColor
+            getCodeBtn.enabled = false
+        }
+    }
+    
+    // MARK: 获取验证码点击
+    @IBAction func getCodeBtnClick()
+    {
+        // 验证手机控制器
+        let registerVerifyPhoneVC = WTRegisterVerifyPhoneViewController()
+        registerVerifyPhoneVC.countryCodeAndPhoneNumber = countryCodeLabel.text! + " \(phoneTextF.text!)"
+        navigationController?.pushViewController(registerVerifyPhoneVC, animated: true)
     }
     
     // MARK: 注册协议提示
     @IBAction func registerAgreementBtnClick()
     {
+        // 注册协议控制器
         navigationController?.pushViewController(WTAgreementViewController(), animated: true)
     }
 }

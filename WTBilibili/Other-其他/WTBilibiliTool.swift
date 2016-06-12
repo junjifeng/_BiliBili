@@ -13,7 +13,6 @@ let APP_KEY = "4ebafd7c4951b366"
 
 let APP_SECRET = "8cb98205e9b2ad3669aad0fce12a4c13"
 
-
 class WTBilibiliTool: NSObject
 {
     
@@ -40,7 +39,7 @@ extension WTBilibiliTool
     static func encodeHomeLiveDetailSign420(room_id: Int, timeInterval: Int) -> String
     {
         let param = "actionKey=appkey&appkey=\(APP_KEY)&build=3300&device=phone&platform=ios&room_id=\(room_id)&ts=\(timeInterval)\(APP_SECRET)"
-                                                        return param.md5()
+        return param.md5()
     }
 }
 
@@ -54,4 +53,16 @@ extension WTBilibiliTool
 extension WTBilibiliTool
 {
     
+}
+
+// MARK: - 我的
+extension WTBilibiliTool
+{
+    // 游戏中心
+    static func encodeGameCenterSign(timeInterval: Int, udid: String) -> String
+    {
+        let param = "actionKey=appkey&appkey=\(APP_KEY)&build=3300&cli_version=4.20&device=phone&platform=ios&svr_version=1.1&timestamp=\(timeInterval * 1000)&ts=\(timeInterval)&udid=a1761fdacd4633fdf16dfb77b84236d4\(APP_SECRET)"
+        
+        return param.md5()
+    }
 }

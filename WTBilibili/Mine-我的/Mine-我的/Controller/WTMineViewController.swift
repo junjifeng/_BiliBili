@@ -26,13 +26,13 @@ class WTMineViewController: UITableViewController {
     
     // MARK: - 属性
     /// 数据源
-    var datas = [[WTMineItem]]()
+    var mineItems = [[WTMineItem]]()
     
     // MARK: - 系统回调函数
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        // 设置UI
         setupUI()
     }
 }
@@ -43,16 +43,19 @@ extension WTMineViewController
     // MARK: 设置UI
     private func setupUI()
     {
-        datas.append([WTMineItem(imageName: "mine_message", title: "消息")])
+        unowned let weakSelf = self
+        mineItems.append([WTMineItem(imageName: "mine_message", title: "消息", actionBlock: nil)])
         
-        datas.append([WTMineItem(imageName: "mine_download", title: "离线缓存")])
+        mineItems.append([WTMineItem(imageName: "mine_download", title: "离线缓存", actionBlock: nil)])
         
-        datas.append(
-                    [WTMineItem(imageName: "mine_history", title: "历史记录"),
-                     WTMineItem(imageName: "mine_favourite", title: "我的收藏"),
-                     WTMineItem(imageName: "mine_follow", title: "我的关注"),
-                     WTMineItem(imageName: "mine_bill", title: "我的钱包"),
-                     WTMineItem(imageName: "mine_game", title: "游戏中心")
+        mineItems.append(
+                    [WTMineItem(imageName: "mine_history", title: "历史记录", actionBlock: nil),
+                     WTMineItem(imageName: "mine_favourite", title: "我的收藏", actionBlock: nil),
+                     WTMineItem(imageName: "mine_follow", title: "我的关注", actionBlock: nil),
+                     WTMineItem(imageName: "mine_bill", title: "我的钱包", actionBlock: nil),
+                     WTMineItem(imageName: "mine_game", title: "游戏中心", actionBlock: {
+                        weakSelf.navigationController?.pushViewController(WTGameCenterController(), animated: true)
+                     })
                     ]
                     )
         
@@ -70,21 +73,33 @@ extension WTMineViewController
 {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
-        return datas.count
+        return mineItems.count
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return datas[section].count
+        return mineItems[section].count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier(mineCellIdentifier) as! WTMineCell
         
-        cell.mineItem = datas[indexPath.section][indexPath.row]
+        cell.mineItem = mineItems[indexPath.section][indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let mineItem = mineItems[indexPath.section][indexPath.row] as WTMineItem
+        
+        if let actionBlockTemp = mineItem.actionBlock
+        {
+            actionBlockTemp()
+        }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
