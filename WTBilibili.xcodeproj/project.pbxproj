@@ -48,6 +48,8 @@
 		B6D4F1A71CD8CDFD009B39E0 /* config in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1A61CD8CDFD009B39E0 /* config */; };
 		B6D4F1C31CD8D1DA009B39E0 /* WTTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4F1C21CD8D1DA009B39E0 /* WTTabBarController.swift */; };
 		B6D4F1C71CD8D29B009B39E0 /* WTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4F1C61CD8D29B009B39E0 /* WTNavigationController.swift */; };
+		B6D706151D0EEF6800B65C95 /* WTWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D706131D0EEF6800B65C95 /* WTWebViewController.swift */; };
+		B6D706161D0EEF6800B65C95 /* WTWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D706141D0EEF6800B65C95 /* WTWebViewController.xib */; };
 		B6DA39F31CE4EDA1006384A1 /* WTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DA39F11CE4EDA1006384A1 /* WTPlayerViewController.m */; };
 		B6DA39F41CE4EDA1006384A1 /* WTPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DA39F21CE4EDA1006384A1 /* WTPlayerViewController.storyboard */; };
 		B6DA3A231CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6DA3A0A1CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard */; };
@@ -135,6 +137,8 @@
 		B6D4F1A61CD8CDFD009B39E0 /* config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config; sourceTree = "<group>"; };
 		B6D4F1C21CD8D1DA009B39E0 /* WTTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTabBarController.swift; sourceTree = "<group>"; };
 		B6D4F1C61CD8D29B009B39E0 /* WTNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTNavigationController.swift; sourceTree = "<group>"; };
+		B6D706131D0EEF6800B65C95 /* WTWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTWebViewController.swift; sourceTree = "<group>"; };
+		B6D706141D0EEF6800B65C95 /* WTWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTWebViewController.xib; sourceTree = "<group>"; };
 		B6DA39E81CE4EAC4006384A1 /* WTBilibili-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTBilibili-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6DA39F01CE4EDA1006384A1 /* WTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPlayerViewController.h; sourceTree = "<group>"; };
 		B6DA39F11CE4EDA1006384A1 /* WTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPlayerViewController.m; sourceTree = "<group>"; };
@@ -650,6 +654,8 @@
 				B6DA3A3B1CE4EE73006384A1 /* WTBilibiliTool.swift */,
 				B6DA39E81CE4EAC4006384A1 /* WTBilibili-Bridging-Header.h */,
 				B699B8521CFF14B300AFB98E /* WTLabel.swift */,
+				B6D706131D0EEF6800B65C95 /* WTWebViewController.swift */,
+				B6D706141D0EEF6800B65C95 /* WTWebViewController.xib */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -854,6 +860,7 @@
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */,
+				B6D706161D0EEF6800B65C95 /* WTWebViewController.xib in Resources */,
 				B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */,
 				B699B8681CFF2C8000AFB98E /* WTMineViewController.storyboard in Resources */,
 				B6DA3A231CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard in Resources */,
@@ -948,6 +955,7 @@
 				B6DA3A281CE4EDF0006384A1 /* WTIconItem.swift in Sources */,
 				B6DA3A2C1CE4EDF0006384A1 /* WTLiveItem.swift in Sources */,
 				B6DA39F31CE4EDA1006384A1 /* WTPlayerViewController.m in Sources */,
+				B6D706151D0EEF6800B65C95 /* WTWebViewController.swift in Sources */,
 				30496F911CD989B600C8B5E6 /* WTCategoryViewController.swift in Sources */,
 				B67FF7B21D0D843A00BF5C84 /* UIBarButtonItem-Extension.swift in Sources */,
 				B6D4F1C31CD8D1DA009B39E0 /* WTTabBarController.swift in Sources */,

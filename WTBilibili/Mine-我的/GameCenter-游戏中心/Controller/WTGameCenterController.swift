@@ -8,6 +8,8 @@
 
 import UIKit
 
+private let gameCenterCell = "gameCenterCell"
+
 class WTGameCenterController: UITableViewController {
 
     // MARK: - 属性
@@ -19,6 +21,33 @@ class WTGameCenterController: UITableViewController {
     {
         super.viewDidLoad()
 
+        // 设置UI
+        setupUI()
+        
+        // 加载数据
+        loadData()
+    }
+}
+
+// MARK: - 自定义函数
+extension WTGameCenterController
+{
+    // MARK: 设置UI
+    private func setupUI()
+    {
+        title = "游戏中心"
+        
+        // 注册cell
+        tableView.registerNib(UINib(nibName: "WTGameCenterCell", bundle: nil), forCellReuseIdentifier: gameCenterCell)
+        // 行高
+        tableView.rowHeight = 225;
+        // 取消分隔线
+        tableView.separatorStyle = .None
+    }
+    
+    // MARK: 加载数据
+    private func loadData()
+    {
         // 加载游戏中心数据
         loadGameCenterData()
     }
@@ -51,13 +80,29 @@ extension WTGameCenterController
 // MARK: - Table view data source
 extension WTGameCenterController
 {
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return gameCenterItems.count
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(gameCenterCell) as! WTGameCenterCell
+        cell.gameCenterItem = gameCenterItems[indexPath.row]
+        
+        return cell
     }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        // 跳转至网页浏览器
+        let webVC = WTWebViewController()
+        webVC.url = gameCenterItems[indexPath.row].download_link
+        navigationController?.pushViewController(webVC, animated: true)
+    }
+
 }
+

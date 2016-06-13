@@ -9,9 +9,12 @@
 import UIKit
 import Ji
 
-let APP_KEY = "4ebafd7c4951b366"
+//let APP_KEY = "4ebafd7c4951b366"
+//let APP_SECRET = "8cb98205e9b2ad3669aad0fce12a4c13"
 
-let APP_SECRET = "8cb98205e9b2ad3669aad0fce12a4c13"
+let APP_KEY = "c1b107428d337928"
+let APP_SECRET = "ea85624dfcf12d7cc7b2b3a94fac1f2c"
+
 
 class WTBilibiliTool: NSObject
 {

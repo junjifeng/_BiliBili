@@ -19,4 +19,16 @@ extension UIBarButtonItem
         closeBtn.addTarget(target, action: action, forControlEvents: .TouchUpInside)
         return UIBarButtonItem(customView: closeBtn)
     }
+    
+    public convenience init(title: String, titleColor: UIColor,target: AnyObject?, action: Selector)
+    {
+        let btn = UIButton(type: .Custom)
+        btn.setTitle(title, forState: .Normal)
+        btn.setTitleColor(titleColor, forState: .Normal)
+        btn.titleLabel?.font = UIFont.systemFontOfSize(17)
+        btn.sizeToFit()
+        
+        btn.addTarget(target, action: action, forControlEvents: .TouchUpInside)
+        self.init(customView: btn)
+    }
 }

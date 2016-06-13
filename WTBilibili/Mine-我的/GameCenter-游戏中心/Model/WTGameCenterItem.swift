@@ -28,7 +28,7 @@ class WTGameCenterItem: NSObject
     
     var download_link: String!
     
-    var cover: String!
+    var cover: NSURL!
     
     var hot: Int = 0
     
