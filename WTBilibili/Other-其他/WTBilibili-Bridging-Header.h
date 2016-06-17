@@ -5,3 +5,4 @@
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import <CommonCrypto/CommonDigest.h>
 #import "WTPlayerViewController.h"
+#import "XMGTopWindow.h"

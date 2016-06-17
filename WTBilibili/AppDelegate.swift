@@ -22,10 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 2、设置全局tabBar的颜色
         UITabBar.appearance().tintColor = WTColor(r: 180, g: 84, b: 112)
-        
-        
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 666666)!, NSFontAttributeName: UIFont.systemFontOfSize(17)]
         
+        
+        XMGTopWindow.show()
+//        let fontFamilies = UIFont.familyNames()
+//        
+//        for i in 0..<fontFamilies.count
+//        {
+//            let fontFamily = fontFamilies[i]
+//            let fontNames = UIFont.fontNamesForFamilyName(fontFamily)
+//            WTLog("fontFamily:\(fontFamily)-->fontNames:\(fontNames)")
+//        }
         
         return true
     }

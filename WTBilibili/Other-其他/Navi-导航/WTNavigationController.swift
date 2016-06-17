@@ -16,7 +16,12 @@ class WTNavigationController: UINavigationController {
         super.viewDidLoad()
     }
     
-    override func pushViewController(viewController: UIViewController, animated: Bool){
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
+    override func pushViewController(viewController: UIViewController, animated: Bool)
+    {
         
         if childViewControllers.count > 0
         {
@@ -31,8 +36,17 @@ class WTNavigationController: UINavigationController {
             leftItem.addTarget(self, action: #selector(leftItemClick), forControlEvents: .TouchUpInside)
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItem)
         }
-        
         super.pushViewController(viewController, animated: animated)
+    }
+    
+    override func childViewControllerForStatusBarStyle() -> UIViewController?
+    {
+        return topViewController
+    }
+    
+    override func childViewControllerForStatusBarHidden() -> UIViewController?
+    {
+        return topViewController
     }
 }
 

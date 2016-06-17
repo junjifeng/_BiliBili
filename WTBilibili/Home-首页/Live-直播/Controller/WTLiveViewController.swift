@@ -126,12 +126,11 @@ extension WTLiveViewController
 // MARK: - 事件处理
 extension WTLiveViewController
 {
-    @objc private func liveListDidClick(noti: NSNotification)
+    func liveListDidClick(noti: NSNotification)
     {
-//        print("noti:\(noti)")
         let liveDetailVC = UIStoryboard(name: "WTLiveDetailViewController", bundle: nil).instantiateInitialViewController() as! WTLiveDetailViewController
         liveDetailVC.liveItem = noti.userInfo!["liveItem"] as! WTLiveItem;
-        self.navigationController?.pushViewController(liveDetailVC, animated: true)
+        navigationController?.pushViewController(liveDetailVC, animated: true)
     }
 }
 

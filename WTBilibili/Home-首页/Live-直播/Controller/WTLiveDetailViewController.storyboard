@@ -17,18 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCt-Ai-92H">
-                                <rect key="frame" x="0.0" y="-64" width="600" height="210"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="180"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="210" id="PAB-YT-HVJ"/>
+                                    <constraint firstAttribute="height" constant="180" id="PAB-YT-HVJ"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbL-Mr-CgT">
-                                <rect key="frame" x="0.0" y="146" width="600" height="85"/>
+                                <rect key="frame" x="0.0" y="180" width="600" height="85"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="85" id="QPr-Es-SeC"/>
                                 </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYY-Nb-9jQ">
+                                <rect key="frame" x="0.0" y="265" width="600" height="335"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,10 +40,22 @@
                             <constraint firstAttribute="trailing" secondItem="XCt-Ai-92H" secondAttribute="trailing" id="EqH-MJ-hnW"/>
                             <constraint firstItem="XCt-Ai-92H" firstAttribute="top" secondItem="Nao-A5-21A" secondAttribute="top" constant="-64" id="I4R-Ti-Lhx"/>
                             <constraint firstAttribute="trailing" secondItem="nbL-Mr-CgT" secondAttribute="trailing" id="Ik4-W2-3zf"/>
+                            <constraint firstItem="dON-Rq-v6d" firstAttribute="top" secondItem="KYY-Nb-9jQ" secondAttribute="bottom" id="K6S-oS-6X7"/>
                             <constraint firstItem="nbL-Mr-CgT" firstAttribute="top" secondItem="XCt-Ai-92H" secondAttribute="bottom" id="Oto-gr-WN2"/>
+                            <constraint firstItem="XCt-Ai-92H" firstAttribute="top" secondItem="Nao-A5-21A" secondAttribute="top" id="Qcq-8L-DuV"/>
+                            <constraint firstItem="KYY-Nb-9jQ" firstAttribute="leading" secondItem="Nao-A5-21A" secondAttribute="leading" id="Ug6-jc-XAq"/>
+                            <constraint firstItem="KYY-Nb-9jQ" firstAttribute="top" secondItem="nbL-Mr-CgT" secondAttribute="bottom" id="VK9-nj-itG"/>
                             <constraint firstItem="nbL-Mr-CgT" firstAttribute="leading" secondItem="Nao-A5-21A" secondAttribute="leading" id="WAs-eW-n2j"/>
+                            <constraint firstItem="XCt-Ai-92H" firstAttribute="top" secondItem="roj-RZ-DKn" secondAttribute="bottom" id="ev5-g2-BgV"/>
                             <constraint firstItem="XCt-Ai-92H" firstAttribute="leading" secondItem="Nao-A5-21A" secondAttribute="leading" id="oDa-Vl-6s0"/>
+                            <constraint firstAttribute="trailing" secondItem="KYY-Nb-9jQ" secondAttribute="trailing" id="xzN-Tw-4GS"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="I4R-Ti-Lhx"/>
+                                <exclude reference="ev5-g2-BgV"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="userInfoContentView" destination="nbL-Mr-CgT" id="vUs-PG-wbu"/>

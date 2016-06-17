@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class WTLiveDetailViewController: UIViewController {
 
     // MARK: - 属性
@@ -23,13 +22,15 @@ class WTLiveDetailViewController: UIViewController {
     /// 用户信息ContentView
     @IBOutlet weak var userInfoContentView: UIView!
 
-    /// 竖屏播放器View
-    //var liveDetailVerticalPlayerView = WTLiveDetailVerticalPlayerView.liveDetailVerticalPlayerView()
-    
+    /// 竖屏播放器
     var liveDetailVerticalPlayerVC = WTLiveDetailVerticalPlayerViewController()
     
     /// 用户信息View
     var liveDetailUserInfoView = WTLiveDetailUserInfoView.liveDetailUserInfoView()
+    
+    /// 容器View (互动、端午节、投喂榜、粉丝榜)
+    var pagesContainerView: UIView!
+    
     
     // MARK: 系统回调函数
     override func viewDidLoad()
@@ -54,14 +55,14 @@ class WTLiveDetailViewController: UIViewController {
         liveDetailUserInfoView.frame = userInfoContentView.bounds
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
-    }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
     }
 }
 
@@ -76,7 +77,8 @@ extension WTLiveDetailViewController
         userInfoContentView.addSubview(liveDetailUserInfoView)
         addChildViewController(liveDetailVerticalPlayerVC)
         
-        
+        // 2、子控件属性
+        liveDetailVerticalPlayerVC.playerControlPanelV2.delegate = self
     }
     
     // MARK: 加载数据
@@ -122,6 +124,47 @@ extension WTLiveDetailViewController
             // 更新用户信息的View的数据
             self.liveDetailUserInfoView.liveDetailItem = self.liveDetailItem
         }
+    }
+}
+
+// MARK: - WTPlayerControlPanelV2Delegate
+extension WTLiveDetailViewController: WTPlayerControlPanelV2Delegate
+{
+    // 返回按钮点击
+    func playerControlPanelV2DidClickWithBackBtn()
+    {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
+    // 分享按钮点击
+    func playerControlPanelV2DidClickWithShareBtn()
+    {
+        // 2、重启定时器
+        liveDetailVerticalPlayerVC.restartTimer()
+    }
+    
+    // 播放或暂停按钮点击
+    func playerControlPanelV2(playerControlPanelV2: WTPlayerControlPanelV2, didClickWithPlayOrPauseBtn playOrPauseBtn: UIButton)
+    {
+        // 1、播放或暂停视频
+        if !playOrPauseBtn.selected                     // 暂停
+        {
+            liveDetailVerticalPlayerVC.player?.pause()
+        }
+        else                                            // 播放
+        {
+            liveDetailVerticalPlayerVC.player?.play()
+        }
+        
+        // 2、重启定时器
+        liveDetailVerticalPlayerVC.restartTimer()
+    }
+    
+    // 旋转按钮点击
+    func playerControlPanelV2DidClickWithRotateBtn()
+    {
+        // 2、重启定时器
+        liveDetailVerticalPlayerVC.restartTimer()
     }
 }
 

@@ -50,7 +50,7 @@ class WTLiveDetailUserInfoView: UIView
             master_levelBtn.backgroundColor = UIColor(hex: liveDetailItemTemp.master_level_color)
             
             // 关注
-            attentionLabel.text = "\(liveDetailItemTemp.attention)"
+            //attentionLabel.text = "\(liveDetailItemTemp.attention)"
             
         }
     }
@@ -85,10 +85,10 @@ extension WTLiveDetailUserInfoView
         nameLabel.textColor = WTMainColor
         
         // 关注按钮
-        followOperationBtn.setTitleColor(WTMainColor, forState: .Normal)
-        followOperationBtn.layer.cornerRadius = 3
-        followOperationBtn.layer.masksToBounds = true
-        followOperationBtn.layer.borderColor = WTMainColor.CGColor
-        followOperationBtn.layer.borderWidth = 1
+//        followOperationBtn.setTitleColor(WTMainColor, forState: .Normal)
+//        followOperationBtn.layer.cornerRadius = 3
+//        followOperationBtn.layer.masksToBounds = true
+//        followOperationBtn.layer.borderColor = WTMainColor.CGColor
+//        followOperationBtn.layer.borderWidth = 1
     }
 }

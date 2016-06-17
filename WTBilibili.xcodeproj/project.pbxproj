@@ -21,6 +21,12 @@
 		B67FF7BA1D0DA2EC00BF5C84 /* WTGameCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B67FF7B81D0DA2EC00BF5C84 /* WTGameCenterCell.xib */; };
 		B67FF7BC1D0DA3A400BF5C84 /* WTGameCenterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FF7BB1D0DA3A400BF5C84 /* WTGameCenterItem.swift */; };
 		B67FF7BE1D0DA3FB00BF5C84 /* WTGameCenterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FF7BD1D0DA3FB00BF5C84 /* WTGameCenterController.swift */; };
+		B68023741D12402300F17504 /* WTBiliControllerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68023731D12402300F17504 /* WTBiliControllerContainerView.swift */; };
+		B68023761D12410F00F17504 /* WTLiveDanmakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68023751D12410F00F17504 /* WTLiveDanmakuViewController.swift */; };
+		B680237F1D124D8D00F17504 /* XMGTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B680237C1D124D8D00F17504 /* XMGTopWindow.m */; };
+		B68023801D124D8D00F17504 /* XMGTopWindowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B680237E1D124D8D00F17504 /* XMGTopWindowViewController.m */; };
+		B68023821D12BB6F00F17504 /* WTPlayerControlPanelV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68023811D12BB6F00F17504 /* WTPlayerControlPanelV2.swift */; };
+		B68023841D12BBE800F17504 /* WTPlayerControlPanelV2.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68023831D12BBE800F17504 /* WTPlayerControlPanelV2.xib */; };
 		B699B8531CFF14B300AFB98E /* WTLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B699B8521CFF14B300AFB98E /* WTLabel.swift */; };
 		B699B8541CFF191000AFB98E /* HY-QiHei50.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */; };
 		B699B8681CFF2C8000AFB98E /* WTMineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */; };
@@ -108,6 +114,14 @@
 		B67FF7B81D0DA2EC00BF5C84 /* WTGameCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTGameCenterCell.xib; sourceTree = "<group>"; };
 		B67FF7BB1D0DA3A400BF5C84 /* WTGameCenterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGameCenterItem.swift; sourceTree = "<group>"; };
 		B67FF7BD1D0DA3FB00BF5C84 /* WTGameCenterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTGameCenterController.swift; sourceTree = "<group>"; };
+		B68023731D12402300F17504 /* WTBiliControllerContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBiliControllerContainerView.swift; sourceTree = "<group>"; };
+		B68023751D12410F00F17504 /* WTLiveDanmakuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveDanmakuViewController.swift; sourceTree = "<group>"; };
+		B680237B1D124D8D00F17504 /* XMGTopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopWindow.h; sourceTree = "<group>"; };
+		B680237C1D124D8D00F17504 /* XMGTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopWindow.m; sourceTree = "<group>"; };
+		B680237D1D124D8D00F17504 /* XMGTopWindowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGTopWindowViewController.h; sourceTree = "<group>"; };
+		B680237E1D124D8D00F17504 /* XMGTopWindowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGTopWindowViewController.m; sourceTree = "<group>"; };
+		B68023811D12BB6F00F17504 /* WTPlayerControlPanelV2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTPlayerControlPanelV2.swift; sourceTree = "<group>"; };
+		B68023831D12BBE800F17504 /* WTPlayerControlPanelV2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTPlayerControlPanelV2.xib; sourceTree = "<group>"; };
 		B699B8511CFF146E00AFB98E /* HY-QiHei50.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HY-QiHei50.ttf"; sourceTree = "<group>"; };
 		B699B8521CFF14B300AFB98E /* WTLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLabel.swift; sourceTree = "<group>"; };
 		B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTMineViewController.storyboard; sourceTree = "<group>"; };
@@ -693,6 +707,7 @@
 				B6DA3A0A1CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard */,
 				B6B148D41CFB26EE0020CB89 /* WTLiveDetailVerticalPlayerViewController.swift */,
 				B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */,
+				B68023751D12410F00F17504 /* WTLiveDanmakuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -727,6 +742,9 @@
 				B6DA3A211CE4EDF0006384A1 /* WTLivePartitionCell.xib */,
 				B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */,
 				B66E25F21CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib */,
+				B68023731D12402300F17504 /* WTBiliControllerContainerView.swift */,
+				B68023811D12BB6F00F17504 /* WTPlayerControlPanelV2.swift */,
+				B68023831D12BBE800F17504 /* WTPlayerControlPanelV2.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -747,6 +765,10 @@
 				B6DA3A411CE4EE9C006384A1 /* UIViewController-Extension.swift */,
 				B6B148D21CF75E880020CB89 /* UIColor-Extension.swift */,
 				B67FF7B11D0D843A00BF5C84 /* UIBarButtonItem-Extension.swift */,
+				B680237B1D124D8D00F17504 /* XMGTopWindow.h */,
+				B680237C1D124D8D00F17504 /* XMGTopWindow.m */,
+				B680237D1D124D8D00F17504 /* XMGTopWindowViewController.h */,
+				B680237E1D124D8D00F17504 /* XMGTopWindowViewController.m */,
 			);
 			path = "Extension-扩展";
 			sourceTree = "<group>";
@@ -855,6 +877,7 @@
 				B67FF7B01D0D7E3200BF5C84 /* WTRegisterVerifyPhoneViewController.xib in Resources */,
 				B6B148DB1CFC8A380020CB89 /* WTLoginViewController.xib in Resources */,
 				B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */,
+				B68023841D12BBE800F17504 /* WTPlayerControlPanelV2.xib in Resources */,
 				B6A530F41D0C4E2000716FBE /* register_licence.html in Resources */,
 				B6A530F21D0C499500716FBE /* WTRegisterViewController.storyboard in Resources */,
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
@@ -940,11 +963,14 @@
 				B6DA3A2E1CE4EDF0006384A1 /* WTPartitionItem.swift in Sources */,
 				B6DA3A251CE4EDF0006384A1 /* WTLiveViewController.swift in Sources */,
 				B6A530F71D0C639400716FBE /* WTAgreementViewController.swift in Sources */,
+				B680237F1D124D8D00F17504 /* XMGTopWindow.m in Sources */,
 				B6DA3A271CE4EDF0006384A1 /* WTEntranceIconsItem.swift in Sources */,
+				B68023761D12410F00F17504 /* WTLiveDanmakuViewController.swift in Sources */,
 				B67FF7BE1D0DA3FB00BF5C84 /* WTGameCenterController.swift in Sources */,
 				B6DA3A441CE4EE9C006384A1 /* UIImage-Extension.swift in Sources */,
 				B6DA3A2B1CE4EDF0006384A1 /* WTLiveDetailScheduleItem.swift in Sources */,
 				B699B86C1CFF2C8000AFB98E /* WTMineHeaderView.swift in Sources */,
+				B68023741D12402300F17504 /* WTBiliControllerContainerView.swift in Sources */,
 				B699B8691CFF2C8000AFB98E /* WTMineViewController.swift in Sources */,
 				B699B8701CFF2C9F00AFB98E /* WTRegisterViewController.swift in Sources */,
 				B6DA3A241CE4EDF0006384A1 /* WTLiveDetailViewController.swift in Sources */,
@@ -959,6 +985,7 @@
 				30496F911CD989B600C8B5E6 /* WTCategoryViewController.swift in Sources */,
 				B67FF7B21D0D843A00BF5C84 /* UIBarButtonItem-Extension.swift in Sources */,
 				B6D4F1C31CD8D1DA009B39E0 /* WTTabBarController.swift in Sources */,
+				B68023801D124D8D00F17504 /* XMGTopWindowViewController.m in Sources */,
 				B6DA3A341CE4EDF0006384A1 /* WTLiveListCell.swift in Sources */,
 				B6DA3A451CE4EE9C006384A1 /* UIViewController-Extension.swift in Sources */,
 				B67FF7AF1D0D7E3200BF5C84 /* WTRegisterVerifyPhoneViewController.swift in Sources */,
@@ -972,6 +999,7 @@
 				B6DA3A5D1CE4EF41006384A1 /* WTVideoListCell.swift in Sources */,
 				B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */,
 				B6DA3A291CE4EDF0006384A1 /* WTLiveDetailItem.swift in Sources */,
+				B68023821D12BB6F00F17504 /* WTPlayerControlPanelV2.swift in Sources */,
 				B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */,
 				B67FF7B91D0DA2EC00BF5C84 /* WTGameCenterCell.swift in Sources */,
 				B699B86A1CFF2C8000AFB98E /* WTMineItem.swift in Sources */,
