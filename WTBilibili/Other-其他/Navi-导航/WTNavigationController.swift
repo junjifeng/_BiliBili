@@ -15,11 +15,7 @@ class WTNavigationController: UINavigationController {
     {
         super.viewDidLoad()
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-    }
-    
+
     override func pushViewController(viewController: UIViewController, animated: Bool)
     {
         
@@ -40,11 +36,6 @@ class WTNavigationController: UINavigationController {
     }
     
     override func childViewControllerForStatusBarStyle() -> UIViewController?
-    {
-        return topViewController
-    }
-    
-    override func childViewControllerForStatusBarHidden() -> UIViewController?
     {
         return topViewController
     }

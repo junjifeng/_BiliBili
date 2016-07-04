@@ -18,6 +18,10 @@ class WTTabBarController: UITabBarController
         // 设置UI
         setupUI()
     }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
 }
 
 // MARK: - 自定义函数
@@ -36,7 +40,7 @@ extension WTTabBarController
         addOneChildViewController(WTDiscoverViewController(), title: "发现", imageName: "home_discovery_tab")
         
         // 4、我的
-        addOneChildViewController(UIStoryboard(name: "WTMineViewController", bundle: nil).instantiateInitialViewController()!, title: "我的", imageName: "home_mine_tab")
+        addOneChildViewController(WTUserCenterViewController(), title: "我的", imageName: "home_mine_tab")
     }
     
     // MARK: 添加一个控制器

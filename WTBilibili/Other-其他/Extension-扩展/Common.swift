@@ -13,6 +13,8 @@ import Foundation
 let WTScreenWidth = UIScreen.mainScreen().bounds.size.width
 let WTScreenHeight = UIScreen.mainScreen().bounds.size.height
 
+let WTTabBarHeight: CGFloat = 48
+
 let DOMAIN = "com.wutouqishi14.com"
 
 /// 设置颜色
@@ -33,6 +35,12 @@ let WTMainColor = WTColor(r: 251, g: 114, b: 153)
 let WTHomeTitleBtnNormalColor = WTColor(r: 153, g: 153, b: 153)
 /// 标题按钮选中颜色
 let WTHomeTitleBtnSelectedColor = WTMainColor
+
+/// 随机色
+public func WTRandomColor() -> UIColor
+{
+    return WTColor(r: CGFloat(arc4random_uniform(255)) / 255.0, g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
+}
 
 /// 注册帐号获取验证码默认颜色
 let WTRegisterGetCodeNormalColor = WTColor(r: 222, g: 105, b: 140)

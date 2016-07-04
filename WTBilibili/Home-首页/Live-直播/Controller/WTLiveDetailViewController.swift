@@ -52,7 +52,7 @@ class WTLiveDetailViewController: UIViewController {
         
         // 1、设置Frame
         liveDetailVerticalPlayerVC.view.frame = verticalPlayerContentView.bounds
-        liveDetailUserInfoView.frame = userInfoContentView.bounds
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -79,6 +79,10 @@ extension WTLiveDetailViewController
         
         // 2、子控件属性
         liveDetailVerticalPlayerVC.playerControlPanelV2.delegate = self
+        
+        liveDetailUserInfoView.snp_makeConstraints { (make) in
+            make.edges.equalTo(userInfoContentView)
+        }
     }
     
     // MARK: 加载数据

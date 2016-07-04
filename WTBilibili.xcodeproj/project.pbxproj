@@ -47,6 +47,14 @@
 		B6B148D71CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */; };
 		B6B148DA1CFC8A380020CB89 /* WTLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B148D81CFC8A380020CB89 /* WTLoginViewController.swift */; };
 		B6B148DB1CFC8A380020CB89 /* WTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6B148D91CFC8A380020CB89 /* WTLoginViewController.xib */; };
+		B6BC5B6A1D28FF5B000E0B46 /* WTUserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B691D28FF5B000E0B46 /* WTUserCenterViewController.swift */; };
+		B6BC5B6E1D290A52000E0B46 /* WTNotLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B6D1D290A52000E0B46 /* WTNotLoginView.swift */; };
+		B6BC5B701D290A60000E0B46 /* WTNotLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BC5B6F1D290A60000E0B46 /* WTNotLoginView.xib */; };
+		B6BC5B731D2913CC000E0B46 /* WTUserCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B711D2913CC000E0B46 /* WTUserCenterCell.swift */; };
+		B6BC5B741D2913CC000E0B46 /* WTUserCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6BC5B721D2913CC000E0B46 /* WTUserCenterCell.xib */; };
+		B6BC5B761D29150D000E0B46 /* WTUserCenterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B751D29150D000E0B46 /* WTUserCenterItem.swift */; };
+		B6BC5B781D2A2464000E0B46 /* WTUserCenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B771D2A2464000E0B46 /* WTUserCenterButton.swift */; };
+		B6BC5B7A1D2A5728000E0B46 /* WTBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B791D2A5728000E0B46 /* WTBaseTableView.swift */; };
 		B6C457F91CFDD2FC00F419A7 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */; };
 		B6D4F17B1CD8CAFD009B39E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */; };
 		B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1811CD8CAFD009B39E0 /* Assets.xcassets */; };
@@ -142,6 +150,14 @@
 		B6B148D61CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLiveDetailVerticalPlayerViewController.xib; sourceTree = "<group>"; };
 		B6B148D81CFC8A380020CB89 /* WTLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLoginViewController.swift; sourceTree = "<group>"; };
 		B6B148D91CFC8A380020CB89 /* WTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTLoginViewController.xib; sourceTree = "<group>"; };
+		B6BC5B691D28FF5B000E0B46 /* WTUserCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTUserCenterViewController.swift; sourceTree = "<group>"; };
+		B6BC5B6D1D290A52000E0B46 /* WTNotLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTNotLoginView.swift; sourceTree = "<group>"; };
+		B6BC5B6F1D290A60000E0B46 /* WTNotLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTNotLoginView.xib; sourceTree = "<group>"; };
+		B6BC5B711D2913CC000E0B46 /* WTUserCenterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTUserCenterCell.swift; sourceTree = "<group>"; };
+		B6BC5B721D2913CC000E0B46 /* WTUserCenterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTUserCenterCell.xib; sourceTree = "<group>"; };
+		B6BC5B751D29150D000E0B46 /* WTUserCenterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTUserCenterItem.swift; sourceTree = "<group>"; };
+		B6BC5B771D2A2464000E0B46 /* WTUserCenterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTUserCenterButton.swift; sourceTree = "<group>"; };
+		B6BC5B791D2A5728000E0B46 /* WTBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBaseTableView.swift; sourceTree = "<group>"; };
 		B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		B6D4F1771CD8CAFD009B39E0 /* WTBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -428,6 +444,8 @@
 			children = (
 				B699B85B1CFF2C8000AFB98E /* WTMineViewController.storyboard */,
 				B699B85C1CFF2C8000AFB98E /* WTMineViewController.swift */,
+				B6BC5B691D28FF5B000E0B46 /* WTUserCenterViewController.swift */,
+				B6BC5B791D2A5728000E0B46 /* WTBaseTableView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -436,6 +454,7 @@
 			isa = PBXGroup;
 			children = (
 				B699B85E1CFF2C8000AFB98E /* WTMineItem.swift */,
+				B6BC5B751D29150D000E0B46 /* WTUserCenterItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -446,6 +465,11 @@
 				B699B8601CFF2C8000AFB98E /* WTMineCell.swift */,
 				B699B8611CFF2C8000AFB98E /* WTMineHeaderView.swift */,
 				B699B8621CFF2C8000AFB98E /* WTMineHeaderView.xib */,
+				B6BC5B6D1D290A52000E0B46 /* WTNotLoginView.swift */,
+				B6BC5B6F1D290A60000E0B46 /* WTNotLoginView.xib */,
+				B6BC5B711D2913CC000E0B46 /* WTUserCenterCell.swift */,
+				B6BC5B721D2913CC000E0B46 /* WTUserCenterCell.xib */,
+				B6BC5B771D2A2464000E0B46 /* WTUserCenterButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -846,7 +870,7 @@
 				TargetAttributes = {
 					B6D4F1761CD8CAFC009B39E0 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 384BYGYQSF;
+						DevelopmentTeam = ZD2FW4SQ72;
 					};
 				};
 			};
@@ -881,12 +905,14 @@
 				B6A530F41D0C4E2000716FBE /* register_licence.html in Resources */,
 				B6A530F21D0C499500716FBE /* WTRegisterViewController.storyboard in Resources */,
 				B6DA3A381CE4EDF0006384A1 /* WTLivePartitionCell.xib in Resources */,
+				B6BC5B741D2913CC000E0B46 /* WTUserCenterCell.xib in Resources */,
 				B6A428701CD8F28C0033E65B /* WTStartupViewController.xib in Resources */,
 				B6DA3A5E1CE4EF41006384A1 /* WTVideoListCell.xib in Resources */,
 				B6D706161D0EEF6800B65C95 /* WTWebViewController.xib in Resources */,
 				B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */,
 				B699B8681CFF2C8000AFB98E /* WTMineViewController.storyboard in Resources */,
 				B6DA3A231CE4EDF0006384A1 /* WTLiveDetailViewController.storyboard in Resources */,
+				B6BC5B701D290A60000E0B46 /* WTNotLoginView.xib in Resources */,
 				B699B86D1CFF2C8000AFB98E /* WTMineHeaderView.xib in Resources */,
 				B6DA3A311CE4EDF0006384A1 /* WTEntranceCell.xib in Resources */,
 				B6B148D71CFB32320020CB89 /* WTLiveDetailVerticalPlayerViewController.xib in Resources */,
@@ -966,10 +992,12 @@
 				B680237F1D124D8D00F17504 /* XMGTopWindow.m in Sources */,
 				B6DA3A271CE4EDF0006384A1 /* WTEntranceIconsItem.swift in Sources */,
 				B68023761D12410F00F17504 /* WTLiveDanmakuViewController.swift in Sources */,
+				B6BC5B761D29150D000E0B46 /* WTUserCenterItem.swift in Sources */,
 				B67FF7BE1D0DA3FB00BF5C84 /* WTGameCenterController.swift in Sources */,
 				B6DA3A441CE4EE9C006384A1 /* UIImage-Extension.swift in Sources */,
 				B6DA3A2B1CE4EDF0006384A1 /* WTLiveDetailScheduleItem.swift in Sources */,
 				B699B86C1CFF2C8000AFB98E /* WTMineHeaderView.swift in Sources */,
+				B6BC5B731D2913CC000E0B46 /* WTUserCenterCell.swift in Sources */,
 				B68023741D12402300F17504 /* WTBiliControllerContainerView.swift in Sources */,
 				B699B8691CFF2C8000AFB98E /* WTMineViewController.swift in Sources */,
 				B699B8701CFF2C9F00AFB98E /* WTRegisterViewController.swift in Sources */,
@@ -986,6 +1014,8 @@
 				B67FF7B21D0D843A00BF5C84 /* UIBarButtonItem-Extension.swift in Sources */,
 				B6D4F1C31CD8D1DA009B39E0 /* WTTabBarController.swift in Sources */,
 				B68023801D124D8D00F17504 /* XMGTopWindowViewController.m in Sources */,
+				B6BC5B6E1D290A52000E0B46 /* WTNotLoginView.swift in Sources */,
+				B6BC5B6A1D28FF5B000E0B46 /* WTUserCenterViewController.swift in Sources */,
 				B6DA3A341CE4EDF0006384A1 /* WTLiveListCell.swift in Sources */,
 				B6DA3A451CE4EE9C006384A1 /* UIViewController-Extension.swift in Sources */,
 				B67FF7AF1D0D7E3200BF5C84 /* WTRegisterVerifyPhoneViewController.swift in Sources */,
@@ -1000,6 +1030,7 @@
 				B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */,
 				B6DA3A291CE4EDF0006384A1 /* WTLiveDetailItem.swift in Sources */,
 				B68023821D12BB6F00F17504 /* WTPlayerControlPanelV2.swift in Sources */,
+				B6BC5B7A1D2A5728000E0B46 /* WTBaseTableView.swift in Sources */,
 				B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */,
 				B67FF7B91D0DA2EC00BF5C84 /* WTGameCenterCell.swift in Sources */,
 				B699B86A1CFF2C8000AFB98E /* WTMineItem.swift in Sources */,
@@ -1008,6 +1039,7 @@
 				B6DA3A321CE4EDF0006384A1 /* WTEntranceIconButton.swift in Sources */,
 				B6DA3A361CE4EDF0006384A1 /* WTLiveListCollectionView.swift in Sources */,
 				B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */,
+				B6BC5B781D2A2464000E0B46 /* WTUserCenterButton.swift in Sources */,
 				B6DA3A2F1CE4EDF0006384A1 /* WTPartitionsItem.swift in Sources */,
 				B6DA3A431CE4EE9C006384A1 /* String-Extension.swift in Sources */,
 				B6DA3A301CE4EDF0006384A1 /* WTEntranceCell.swift in Sources */,

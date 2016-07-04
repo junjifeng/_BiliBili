@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 666666)!, NSFontAttributeName: UIFont.systemFontOfSize(17)]
         
         
+        //UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         XMGTopWindow.show()
 //        let fontFamilies = UIFont.familyNames()
 //        

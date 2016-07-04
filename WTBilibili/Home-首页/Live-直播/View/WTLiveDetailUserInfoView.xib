@@ -7,7 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7JH-Lv-iiC" customClass="WTLiveDetailUserInfoView" customModule="WTBilibili" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="85"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IiM-FL-ZQb">
                     <rect key="frame" x="10" y="12" width="60" height="60"/>
@@ -32,7 +32,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkQ-VG-mbj">
-                    <rect key="frame" x="0.0" y="84" width="320" height="1"/>
+                    <rect key="frame" x="0.0" y="84" width="600" height="1"/>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="dSH-Oy-tUT"/>
@@ -49,7 +49,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_info_ico" translatesAutoresizingMaskIntoConstraints="NO" id="we4-nj-GMN">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="live_info_ico" translatesAutoresizingMaskIntoConstraints="NO" id="we4-nj-GMN">
                     <rect key="frame" x="118" y="11" width="9" height="14"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-AA-7cq">
@@ -61,23 +61,30 @@
                     <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fOf-zZ-9Td">
-                    <rect key="frame" x="113" y="28" width="94" height="29"/>
-                </stepper>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrZ-WC-M7w">
+                    <rect key="frame" x="522" y="38" width="60" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="CBK-nL-0dm"/>
+                        <constraint firstAttribute="width" constant="60" id="dcF-GS-cr5"/>
+                    </constraints>
+                    <state key="normal" title="+关注">
+                        <color key="titleColor" red="0.98431372549999996" green="0.44705882349999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="IiM-FL-ZQb" firstAttribute="centerY" secondItem="7JH-Lv-iiC" secondAttribute="centerY" id="2aA-2b-1TE"/>
                 <constraint firstItem="KOx-Ar-g2x" firstAttribute="leading" secondItem="vPd-Ie-CPh" secondAttribute="leading" id="8cw-PY-omL"/>
-                <constraint firstItem="fOf-zZ-9Td" firstAttribute="centerY" secondItem="7JH-Lv-iiC" secondAttribute="centerY" id="Cfq-UB-Ga1"/>
+                <constraint firstAttribute="trailing" secondItem="BrZ-WC-M7w" secondAttribute="trailing" constant="18" id="CmU-2c-WG0"/>
                 <constraint firstItem="Nfb-AA-7cq" firstAttribute="top" secondItem="vPd-Ie-CPh" secondAttribute="bottom" constant="8" id="DCh-BC-rjr"/>
                 <constraint firstItem="we4-nj-GMN" firstAttribute="leading" secondItem="KOx-Ar-g2x" secondAttribute="trailing" constant="5" id="F1S-qy-pYW"/>
                 <constraint firstItem="VcN-Hs-tVW" firstAttribute="leading" secondItem="vPd-Ie-CPh" secondAttribute="trailing" constant="10" id="KCF-77-M6v"/>
                 <constraint firstAttribute="bottom" secondItem="UkQ-VG-mbj" secondAttribute="bottom" id="KOR-Eo-gim"/>
-                <constraint firstItem="fOf-zZ-9Td" firstAttribute="centerX" secondItem="7JH-Lv-iiC" secondAttribute="centerX" id="Krx-EK-AYi"/>
                 <constraint firstItem="IiM-FL-ZQb" firstAttribute="leading" secondItem="7JH-Lv-iiC" secondAttribute="leading" constant="10" id="QiD-jq-rOp"/>
                 <constraint firstItem="KOx-Ar-g2x" firstAttribute="leading" secondItem="IiM-FL-ZQb" secondAttribute="trailing" constant="10" id="VRe-kw-dj0"/>
                 <constraint firstItem="UkQ-VG-mbj" firstAttribute="leading" secondItem="7JH-Lv-iiC" secondAttribute="leading" id="XDp-mU-1YJ"/>
+                <constraint firstItem="BrZ-WC-M7w" firstAttribute="top" secondItem="7JH-Lv-iiC" secondAttribute="top" constant="38" id="ZfY-u2-Ppx"/>
                 <constraint firstItem="we4-nj-GMN" firstAttribute="centerY" secondItem="KOx-Ar-g2x" secondAttribute="centerY" id="fBM-wQ-YuY"/>
                 <constraint firstItem="vPd-Ie-CPh" firstAttribute="top" secondItem="KOx-Ar-g2x" secondAttribute="bottom" constant="8" id="fcj-SX-CLV"/>
                 <constraint firstItem="VcN-Hs-tVW" firstAttribute="centerY" secondItem="vPd-Ie-CPh" secondAttribute="centerY" id="jgr-z9-auE"/>
@@ -90,6 +97,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="faceImageV" destination="IiM-FL-ZQb" id="VZQ-MS-Zgb"/>
+                <outlet property="followOperationBtn" destination="BrZ-WC-M7w" id="eLb-ct-qO0"/>
                 <outlet property="master_levelBtn" destination="vPd-Ie-CPh" id="ybe-cZ-L4a"/>
                 <outlet property="nameLabel" destination="VcN-Hs-tVW" id="7GQ-Md-muc"/>
                 <outlet property="titleLabel" destination="KOx-Ar-g2x" id="BJt-6R-5bl"/>

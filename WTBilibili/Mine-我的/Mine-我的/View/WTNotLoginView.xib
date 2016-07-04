@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WTNotLoginView" customModule="WTBilibili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FR-s6-xKd">
+                    <rect key="frame" x="310" y="78" width="100" height="36"/>
+                    <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="loginBtnClick" destination="iN0-l3-epB" eventType="touchUpInside" id="HSn-ou-MyE"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_settings" translatesAutoresizingMaskIntoConstraints="NO" id="60J-zP-mPh">
+                    <rect key="frame" x="562" y="30" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="5Rh-SA-cWb"/>
+                        <constraint firstAttribute="height" constant="22" id="EEJ-g0-NAm"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTO-XV-eQD">
+                    <rect key="frame" x="190" y="78" width="100" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="FLd-5V-N3h"/>
+                        <constraint firstAttribute="height" constant="36" id="QUQ-4V-tvO"/>
+                    </constraints>
+                    <state key="normal" title="注册"/>
+                    <connections>
+                        <action selector="registerBtnClick" destination="iN0-l3-epB" eventType="touchUpInside" id="kqz-Ws-xq8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3FR-s6-xKd" firstAttribute="leading" secondItem="MTO-XV-eQD" secondAttribute="trailing" constant="20" id="AcT-AV-5w1"/>
+                <constraint firstItem="3FR-s6-xKd" firstAttribute="top" secondItem="MTO-XV-eQD" secondAttribute="top" id="HPv-vp-r8w"/>
+                <constraint firstAttribute="trailing" secondItem="60J-zP-mPh" secondAttribute="trailing" constant="16" id="SPo-3y-whe"/>
+                <constraint firstItem="60J-zP-mPh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="VF3-UT-n7K"/>
+                <constraint firstItem="3FR-s6-xKd" firstAttribute="width" secondItem="MTO-XV-eQD" secondAttribute="width" id="a7I-Tu-v8A"/>
+                <constraint firstItem="MTO-XV-eQD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-60" id="bxW-cx-Uo5"/>
+                <constraint firstItem="MTO-XV-eQD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="78" id="ud2-hG-Pk1"/>
+                <constraint firstItem="3FR-s6-xKd" firstAttribute="height" secondItem="MTO-XV-eQD" secondAttribute="height" id="zce-rn-rAF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="loginBtn" destination="3FR-s6-xKd" id="6YV-NM-STj"/>
+                <outlet property="registerBtn" destination="MTO-XV-eQD" id="88R-4K-oYS"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_settings" width="22" height="22"/>
+    </resources>
+</document>

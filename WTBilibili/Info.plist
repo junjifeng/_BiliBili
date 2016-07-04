@@ -42,9 +42,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>HY-QiHei50.ttf</string>
-		<string>SFUIText-BoldG1.otf</string>
-		<string>SFUIText-RegularG3.otf</string>
-		<string>SFUIText-Regular.otf</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
