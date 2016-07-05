@@ -39,18 +39,6 @@ class WTUserCenterViewController: UIViewController {
         // 设置数据
         setupData()
     }
-    
-    override func viewWillAppear(animated: Bool)
-    {
-        UIApplication.sharedApplication().statusBarStyle = .LightContent
-        super.viewWillAppear(animated)
-    }
-    
-    override func viewWillDisappear(animated: Bool)
-    {
-        UIApplication.sharedApplication().statusBarStyle = .Default
-        super.viewWillDisappear(animated)
-    }
 }
 
 // MARK: - 自定义函数
@@ -60,7 +48,6 @@ extension WTUserCenterViewController
     private func setupView()
     {
         
-        self.navigationController!.navigationBar.barStyle = UIBarStyle.Black;
         navigationController?.setNavigationBarHidden(true, animated: false)
         
         
@@ -92,14 +79,21 @@ extension WTUserCenterViewController
     // MARK: 设置数据
     private func setupData()
     {
+        unowned let weakSelf = self
+        
         // 1、生成tableView的数据
         userCenterItemArray.append([
-                        WTUserCenterItem(imageName: "mine_download", title: "离线缓存", actionBlock: nil),
+                        WTUserCenterItem(imageName: "mine_download", title: "离线缓存", actionBlock: {
+                            
+                        }),
                         WTUserCenterItem(imageName: "mine_history", title: "历史记录", actionBlock: nil),
                         WTUserCenterItem(imageName: "mine_favourite", title: "我的收藏", actionBlock: nil),
                         WTUserCenterItem(imageName: "mine_follow", title: "我的关注", actionBlock: nil),
                         WTUserCenterItem(imageName: "mine_pocketcenter", title: "我的钱包", actionBlock: nil),
-                        WTUserCenterItem(imageName: "mine_gamecenter", title: "游戏中心", actionBlock: nil),
+                        WTUserCenterItem(imageName: "mine_gamecenter", title: "游戏中心", actionBlock: {
+                            
+                            weakSelf.navigationController?.pushViewController(WTGameCenterController(), animated: true)
+                        }),
                         WTUserCenterItem(imageName: "mine_theme", title: "主题选择", actionBlock: nil)
             ])
         

@@ -21,11 +21,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         // 2、设置全局tabBar的颜色
-        UITabBar.appearance().tintColor = WTColor(r: 180, g: 84, b: 112)
+        //UITabBar.appearance().tintColor = WTColor(r: 180, g: 84, b: 112)
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 666666)!, NSFontAttributeName: UIFont.systemFontOfSize(17)]
         
         
-        //UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        application.statusBarStyle = .LightContent
         
         XMGTopWindow.show()
 //        let fontFamilies = UIFont.familyNames()

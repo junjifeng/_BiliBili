@@ -10,7 +10,6 @@
 		30496F861CD9896300C8B5E6 /* WTHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */; };
 		30496F871CD9896300C8B5E6 /* WTHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */; };
 		30496F8A1CD9896300C8B5E6 /* WTSomeDramaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */; };
-		30496F911CD989B600C8B5E6 /* WTCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F8D1CD989B600C8B5E6 /* WTCategoryViewController.swift */; };
 		30496F971CD9CDFF00C8B5E6 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */; };
 		B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */; };
 		B66E25F31CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B66E25F21CF74C4500A15BDF /* WTLiveDetailUserInfoView.xib */; };
@@ -56,6 +55,11 @@
 		B6BC5B781D2A2464000E0B46 /* WTUserCenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B771D2A2464000E0B46 /* WTUserCenterButton.swift */; };
 		B6BC5B7A1D2A5728000E0B46 /* WTBaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC5B791D2A5728000E0B46 /* WTBaseTableView.swift */; };
 		B6C457F91CFDD2FC00F419A7 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */; };
+		B6D0C86F1D2A7AE2005AAFC4 /* WTCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C86E1D2A7AE2005AAFC4 /* WTCategoryViewController.swift */; };
+		B6D0C8711D2A7BD6005AAFC4 /* WTCategoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D0C8701D2A7BD6005AAFC4 /* WTCategoryViewController.storyboard */; };
+		B6D0C8751D2A7E30005AAFC4 /* WTCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C8741D2A7E30005AAFC4 /* WTCategoryCell.swift */; };
+		B6D0C8771D2B533E005AAFC4 /* WTTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C8761D2B533E005AAFC4 /* WTTabBar.swift */; };
+		B6D0C87F1D2B5997005AAFC4 /* WTTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D0C87E1D2B5997005AAFC4 /* WTTabBarButton.swift */; };
 		B6D4F17B1CD8CAFD009B39E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */; };
 		B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1811CD8CAFD009B39E0 /* Assets.xcassets */; };
 		B6D4F1851CD8CAFD009B39E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D4F1831CD8CAFD009B39E0 /* LaunchScreen.storyboard */; };
@@ -110,7 +114,6 @@
 		30496F6E1CD9896300C8B5E6 /* WTHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTHomeViewController.swift; sourceTree = "<group>"; };
 		30496F6F1CD9896300C8B5E6 /* WTHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTHomeViewController.xib; sourceTree = "<group>"; };
 		30496F811CD9896300C8B5E6 /* WTSomeDramaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTSomeDramaViewController.swift; sourceTree = "<group>"; };
-		30496F8D1CD989B600C8B5E6 /* WTCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCategoryViewController.swift; sourceTree = "<group>"; };
 		30496F961CD9CDFE00C8B5E6 /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		6698BF783E60EC7413211644 /* Pods-WTBilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTBilibili.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTBilibili/Pods-WTBilibili.release.xcconfig"; sourceTree = "<group>"; };
 		B66E25EE1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTLiveDetailUserInfoView.swift; sourceTree = "<group>"; };
@@ -159,6 +162,11 @@
 		B6BC5B771D2A2464000E0B46 /* WTUserCenterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTUserCenterButton.swift; sourceTree = "<group>"; };
 		B6BC5B791D2A5728000E0B46 /* WTBaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTBaseTableView.swift; sourceTree = "<group>"; };
 		B6C457F81CFDD2FC00F419A7 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		B6D0C86E1D2A7AE2005AAFC4 /* WTCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCategoryViewController.swift; sourceTree = "<group>"; };
+		B6D0C8701D2A7BD6005AAFC4 /* WTCategoryViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WTCategoryViewController.storyboard; sourceTree = "<group>"; };
+		B6D0C8741D2A7E30005AAFC4 /* WTCategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTCategoryCell.swift; sourceTree = "<group>"; };
+		B6D0C8761D2B533E005AAFC4 /* WTTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTabBar.swift; sourceTree = "<group>"; };
+		B6D0C87E1D2B5997005AAFC4 /* WTTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTabBarButton.swift; sourceTree = "<group>"; };
 		B6D4F1771CD8CAFD009B39E0 /* WTBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D4F17A1CD8CAFD009B39E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6D4F1811CD8CAFD009B39E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -334,46 +342,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		30496F8B1CD989B600C8B5E6 /* Category-分区 */ = {
-			isa = PBXGroup;
-			children = (
-				30496F8C1CD989B600C8B5E6 /* Controller */,
-				30496F8E1CD989B600C8B5E6 /* Model */,
-				30496F8F1CD989B600C8B5E6 /* View */,
-				30496F901CD989B600C8B5E6 /* ViewModel */,
-			);
-			path = "Category-分区";
-			sourceTree = "<group>";
-		};
-		30496F8C1CD989B600C8B5E6 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				30496F8D1CD989B600C8B5E6 /* WTCategoryViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		30496F8E1CD989B600C8B5E6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		30496F8F1CD989B600C8B5E6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		30496F901CD989B600C8B5E6 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		3235C7E918C28D4EF0A5B504 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +504,40 @@
 			path = "Startup-启动";
 			sourceTree = "<group>";
 		};
+		B6D0C86C1D2A7AE2005AAFC4 /* Category-分区 */ = {
+			isa = PBXGroup;
+			children = (
+				B6D0C8721D2A7E17005AAFC4 /* Model */,
+				B6D0C8731D2A7E17005AAFC4 /* View */,
+				B6D0C86D1D2A7AE2005AAFC4 /* Controller */,
+			);
+			path = "Category-分区";
+			sourceTree = "<group>";
+		};
+		B6D0C86D1D2A7AE2005AAFC4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6D0C86E1D2A7AE2005AAFC4 /* WTCategoryViewController.swift */,
+				B6D0C8701D2A7BD6005AAFC4 /* WTCategoryViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6D0C8721D2A7E17005AAFC4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6D0C8731D2A7E17005AAFC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6D0C8741D2A7E30005AAFC4 /* WTCategoryCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6D4F16E1CD8CAFC009B39E0 = {
 			isa = PBXGroup;
 			children = (
@@ -558,6 +560,7 @@
 			isa = PBXGroup;
 			children = (
 				B6D4F1A91CD8D11C009B39E0 /* Home-首页 */,
+				B6D0C86C1D2A7AE2005AAFC4 /* Category-分区 */,
 				B6D4F1911CD8CCCA009B39E0 /* Follow-关注 */,
 				B6D4F18C1CD8CCCA009B39E0 /* Discover-发现 */,
 				B6A428481CD8D81C0033E65B /* Mine-我的 */,
@@ -675,7 +678,6 @@
 				30496F731CD9896300C8B5E6 /* Live-直播 */,
 				30496F791CD9896300C8B5E6 /* Recommend-推荐 */,
 				30496F7F1CD9896300C8B5E6 /* SomeDrama-番剧 */,
-				30496F8B1CD989B600C8B5E6 /* Category-分区 */,
 			);
 			path = "Home-首页";
 			sourceTree = "<group>";
@@ -719,6 +721,8 @@
 			isa = PBXGroup;
 			children = (
 				B6D4F1C21CD8D1DA009B39E0 /* WTTabBarController.swift */,
+				B6D0C8761D2B533E005AAFC4 /* WTTabBar.swift */,
+				B6D0C87E1D2B5997005AAFC4 /* WTTabBarButton.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -921,6 +925,7 @@
 				B6D4F1A71CD8CDFD009B39E0 /* config in Resources */,
 				B6DA39F41CE4EDA1006384A1 /* WTPlayerViewController.storyboard in Resources */,
 				B6DA3A5C1CE4EF41006384A1 /* WTRecommendCell.xib in Resources */,
+				B6D0C8711D2A7BD6005AAFC4 /* WTCategoryViewController.storyboard in Resources */,
 				B6D4F1821CD8CAFD009B39E0 /* Assets.xcassets in Resources */,
 				B67FF7BA1D0DA2EC00BF5C84 /* WTGameCenterCell.xib in Resources */,
 			);
@@ -1010,7 +1015,6 @@
 				B6DA3A2C1CE4EDF0006384A1 /* WTLiveItem.swift in Sources */,
 				B6DA39F31CE4EDA1006384A1 /* WTPlayerViewController.m in Sources */,
 				B6D706151D0EEF6800B65C95 /* WTWebViewController.swift in Sources */,
-				30496F911CD989B600C8B5E6 /* WTCategoryViewController.swift in Sources */,
 				B67FF7B21D0D843A00BF5C84 /* UIBarButtonItem-Extension.swift in Sources */,
 				B6D4F1C31CD8D1DA009B39E0 /* WTTabBarController.swift in Sources */,
 				B68023801D124D8D00F17504 /* XMGTopWindowViewController.m in Sources */,
@@ -1028,14 +1032,18 @@
 				B6D4F1C71CD8D29B009B39E0 /* WTNavigationController.swift in Sources */,
 				B6DA3A5D1CE4EF41006384A1 /* WTVideoListCell.swift in Sources */,
 				B6B148D31CF75E880020CB89 /* UIColor-Extension.swift in Sources */,
+				B6D0C8771D2B533E005AAFC4 /* WTTabBar.swift in Sources */,
 				B6DA3A291CE4EDF0006384A1 /* WTLiveDetailItem.swift in Sources */,
 				B68023821D12BB6F00F17504 /* WTPlayerControlPanelV2.swift in Sources */,
 				B6BC5B7A1D2A5728000E0B46 /* WTBaseTableView.swift in Sources */,
 				B6DA3A421CE4EE9C006384A1 /* Common.swift in Sources */,
+				B6D0C8751D2A7E30005AAFC4 /* WTCategoryCell.swift in Sources */,
 				B67FF7B91D0DA2EC00BF5C84 /* WTGameCenterCell.swift in Sources */,
 				B699B86A1CFF2C8000AFB98E /* WTMineItem.swift in Sources */,
+				B6D0C87F1D2B5997005AAFC4 /* WTTabBarButton.swift in Sources */,
 				B6DA3A3C1CE4EE73006384A1 /* WTBilibiliTool.swift in Sources */,
 				B699B8531CFF14B300AFB98E /* WTLabel.swift in Sources */,
+				B6D0C86F1D2A7AE2005AAFC4 /* WTCategoryViewController.swift in Sources */,
 				B6DA3A321CE4EDF0006384A1 /* WTEntranceIconButton.swift in Sources */,
 				B6DA3A361CE4EDF0006384A1 /* WTLiveListCollectionView.swift in Sources */,
 				B66E25EF1CF74BCE00A15BDF /* WTLiveDetailUserInfoView.swift in Sources */,

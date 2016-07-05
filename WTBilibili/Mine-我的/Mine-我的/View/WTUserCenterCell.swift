@@ -43,9 +43,10 @@ class WTUserCenterCell: UITableViewCell {
                 y = CGFloat(i / column) * UserCenterButtonH + topMargin
                 btn.frame = CGRect(x: x, y: y, width: UserCenterButtonW, height: UserCenterButtonH)
                 
+                btn.tag = i
                 btn.setTitle(item.title, forState: .Normal)
-               
                 btn.setImage(UIImage(named: item.imageName), forState: .Normal)
+                btn.addTarget(self, action: #selector(userCenterBtnClick(_:)), forControlEvents: .TouchUpInside)
             }
             
             let surplusCount = column - count % column
@@ -109,5 +110,15 @@ extension WTUserCenterCell
         
         // 3、布局子控件
         headerView.frame = CGRect(x: 0, y: 0, width: WTScreenWidth, height: 44)
+    }
+}
+
+// MARK: - 事件
+extension WTUserCenterCell
+{
+    func userCenterBtnClick(userCenterBtn: WTUserCenterButton)
+    {
+        let actionBlock = userCenterItems![userCenterBtn.tag].actionBlock
+        actionBlock!()
     }
 }
