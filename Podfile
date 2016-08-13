@@ -11,5 +11,6 @@ pod 'SnapKit'
 pod 'FXBlurView'
 pod 'Ji', '~> 1.2.0'
 pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'Base64nl', '~> 1.2'
 end
 

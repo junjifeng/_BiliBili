@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - Base64nl (1.2)
   - FXBlurView (1.6.4)
   - Ji (1.2.0):
     - Ji/Ji (= 1.2.0)
@@ -33,6 +34,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - Base64nl (~> 1.2)
   - FXBlurView
   - Ji (~> 1.2.0)
   - SDCycleScrollView
@@ -46,11 +48,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SwiftyJSON:
-    :commit: 2a5b70f06001316d4fb54501edc70b4084705da0
+    :commit: 73670b94292b8d8496c398a973f56ac67789ba9f
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  Base64nl: a497bdcd1c01ea793d36b399016195a8713c0e95
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   Ji: ddebb22f9ac445db6e884b66f78ea74fb135fdb7
   SDCycleScrollView: a002d85b30cfa9d0ac74069cd3973ca19ff4f22f

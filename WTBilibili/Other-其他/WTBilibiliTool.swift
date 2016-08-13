@@ -69,3 +69,20 @@ extension WTBilibiliTool
         return param.md5()
     }
 }
+
+// MARK: - 登录
+extension WTBilibiliTool
+{
+    static func encodeLoginKeySign(timeInterval: Int) -> String
+    {
+        let param = "_device=iphone&_hwid=a1761fdacd4633fd&_ulv=0&appkey=\(APP_KEY)&platform=ios&type=json\(APP_SECRET)"
+        return param.md5()
+    }
+    
+    static func encodeLoginSign(timeInterval: NSTimeInterval, userid: String, pwd: String) -> String
+    {
+        let param = "app_subid=1&appkey=\(APP_KEY)&appver=3430&permission=ALL&platform=ios&pwd=\(pwd)&type=json&userid=\(userid)\(APP_SECRET)"
+        
+        return param.md5()
+    }
+}

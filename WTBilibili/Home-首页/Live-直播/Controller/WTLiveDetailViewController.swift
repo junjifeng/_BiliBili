@@ -121,7 +121,7 @@ extension WTLiveDetailViewController
                     return 
                 }
                 
-                self.liveDetailVerticalPlayerVC.url = NSURL(string: result!)
+                self.liveDetailVerticalPlayerVC.url = NSURL(string: "http://aikanglb.miguvideo.com/600119/20151124/16/3009640538/3010076819/3010074605_60.mp4.m3u8?msisdn=888888&Channel_ID=0119_04102000-99000_400300000040002&client_ip=58.240.115.2&timestamp=20160812022143&encrypt=979f95a809a649c7fbab16ca0badfea9")
                 //self.playerVC.url = NSURL(string: result!)
             })
             

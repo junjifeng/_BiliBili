@@ -10,7 +10,7 @@ import UIKit
 
 private let userCenterCellIdentifier = "userCenterCellIdentifier"
 
-private let headerViewH: CGFloat = 150
+private let userCenterHeaderViewH: CGFloat = 150
 
 class WTUserCenterViewController: UIViewController {
 
@@ -59,11 +59,11 @@ extension WTUserCenterViewController
         // 2、底部的View
         view.addSubview(footerView)
         footerView.backgroundColor = UIColor.clearColor()
-        footerView.frame = CGRect(x: 0, y: headerViewH, width: WTScreenWidth, height: WTScreenHeight - headerViewH)
+        footerView.frame = CGRect(x: 0, y: userCenterHeaderViewH, width: WTScreenWidth, height: WTScreenHeight - userCenterHeaderViewH)
         
         // 2.1、个人中心、我的消息的tableView
         footerView.addSubview(tableView)
-        tableView.frame = CGRect(x: 0, y: 0, width: WTScreenWidth, height: WTScreenHeight - headerViewH - WTTabBarHeight + 10)
+        tableView.frame = CGRect(x: 0, y: 0, width: WTScreenWidth, height: WTScreenHeight - userCenterHeaderViewH - WTTabBarHeight + 10)
         
         tableView.rowHeight = 234
         tableView.layer.cornerRadius = 5
@@ -138,7 +138,7 @@ extension WTUserCenterViewController: UITableViewDataSource, UITableViewDelegate
             UIView.animateWithDuration(0.1, animations: {
                 
                 self.endY += (-scrollView.contentOffset.y) * 0.3
-                self.footerView.frame.origin.y = headerViewH + self.endY
+                self.footerView.frame.origin.y = userCenterHeaderViewH + self.endY
             })
             
             scrollView.contentOffset = CGPoint(x: 0, y: 0)
@@ -148,7 +148,7 @@ extension WTUserCenterViewController: UITableViewDataSource, UITableViewDelegate
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         UIView.animateWithDuration(0.3) {
             
-            self.footerView.frame.origin.y = headerViewH
+            self.footerView.frame.origin.y = userCenterHeaderViewH
             self.endY = 0
         }
     }

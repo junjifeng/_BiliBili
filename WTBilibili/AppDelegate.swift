@@ -20,22 +20,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = WTTabBarController()
         window?.makeKeyAndVisible()
         
+        let nav = UINavigationController()
+        nav.visibleViewController
+        
         // 2、设置全局tabBar的颜色
-        //UITabBar.appearance().tintColor = WTColor(r: 180, g: 84, b: 112)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor(hex: 666666)!, NSFontAttributeName: UIFont.systemFontOfSize(17)]
-        
-        
+        let navBar = UINavigationBar.appearance()
+        navBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(17)]
+        navBar.barTintColor = WTMainColor
+        navBar.tintColor = UIColor.whiteColor()
+        navBar.shadowImage = UIImage()
         application.statusBarStyle = .LightContent
         
-        XMGTopWindow.show()
-//        let fontFamilies = UIFont.familyNames()
-//        
-//        for i in 0..<fontFamilies.count
-//        {
-//            let fontFamily = fontFamilies[i]
-//            let fontNames = UIFont.fontNamesForFamilyName(fontFamily)
-//            WTLog("fontFamily:\(fontFamily)-->fontNames:\(fontNames)")
-//        }
+        //NetworkTools.shareInstance.getLoginKey()
+        
+        
         
         return true
     }

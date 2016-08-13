@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let headerViewH: CGFloat = 54
+private let categoryHeaderViewH: CGFloat = 54
 
 private let categoryCellIdentifier = "categoryCellIdentifier"
 
@@ -84,7 +84,6 @@ extension WTCategoryViewController
         userCenterItems.append(WTUserCenterItem(imageName: "home_region_icon_11", title: "电视剧", actionBlock: nil))
         userCenterItems.append(WTUserCenterItem(imageName: "home_region_icon_11", title: "游戏中心", actionBlock: nil))
         
-        
         collectionView.reloadData()
     }
 }
@@ -113,7 +112,7 @@ extension WTCategoryViewController: UICollectionViewDataSource, UICollectionView
             UIView.animateWithDuration(0.1, animations: {
                 
                 self.endY += (-scrollView.contentOffset.y) * 0.3
-                self.footerView.frame.origin.y = headerViewH + self.endY
+                self.footerView.frame.origin.y = categoryHeaderViewH + self.endY
             })
             
             scrollView.contentOffset = CGPoint(x: 0, y: 0)
@@ -123,7 +122,7 @@ extension WTCategoryViewController: UICollectionViewDataSource, UICollectionView
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         UIView.animateWithDuration(0.3) {
             
-            self.footerView.frame.origin.y = headerViewH
+            self.footerView.frame.origin.y = categoryHeaderViewH
             self.endY = 0
         }
     }

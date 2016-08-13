@@ -255,3 +255,52 @@ extension NetworkTools
         }
     }
 }
+
+// MARK: - 登录
+extension NetworkTools
+{
+    func getLoginKey()
+    {
+        let urlString = "https://account.bilibili.com/api/login/get_key?_device=iphone&_hwid=a1761fdacd4633fd&_ulv=0&appkey=\(APP_KEY)&platform=ios&type=json&sign=\(WTBilibiliTool.encodeLoginKeySign(WTTimeInterval))"
+        
+        request(.GET, urlString: urlString, parameters: nil) { (result, error) in
+            WTLog("result:\(result)")
+            
+            // 2.1、错误检验
+            if error != nil
+            {
+//                finished(result: nil, error: error)
+                WTLog("error:\(error)")
+                return
+            }
+            
+            // 2.2、将AnyObject转成字典
+            guard let resultDict = result else{
+//                finished(result: nil, error: NSError(domain: DOMAIN, code: -1011, userInfo: ["errorInfo": "将结果转成字典失败"]))
+                WTLog("将结果转成字典失败")
+                return
+            }
+            
+            let loginKeyItem = WTLoginKeyItem(dict: resultDict as! [String : AnyObject])
+            
+            
+            let originPwd = "gJ19930304"
+            let key = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCdScM09sZJqFPX7bvmB2y6i08J\nbHsa0v4THafPbJN9NoaZ9Djz1LmeLkVlmWx1DwgHVW+K7LVWT5FV3johacVRuV98\n37+RNntEK6SE82MPcl7fA++dmW2cLlAjsIIkrX+aIvvSGCuUfcWpWFy3YVDqhuHr\nNDjdNcaefJIQHMW+sQIDAQAB".stringByReplacingOccurrencesOfString("-----BEGIN PUBLIC KEY-----\n", withString: "").stringByReplacingOccurrencesOfString("\n-----END PUBLIC KEY-----\n", withString: "").stringByReplacingOccurrencesOfString("\n", withString: "")
+            
+           WTLog("key:\(key)")
+            let view = UIView()
+            view.subviews
+            let pwd = RSAEncryptor.encryptString(originPwd, publicKey: key)
+            WTLog("pwd:\(pwd)")
+            let encodePwd = pwd.URLEncode()!
+            let userid = "耿大神"
+            let encodeUserid = userid.URLEncode()!
+            let urlString = "https://account.bilibili.com/api/login/v2?app_subid=1&appkey=\(APP_KEY)&appver=3430&permission=ALL&platform=ios&pwd=\(encodePwd)&type=json&userid=\(encodeUserid)&sign=\(WTBilibiliTool.encodeLoginSign(loginKeyItem.ts, userid: userid, pwd: pwd))"
+            WTLog("urlString:\(urlString)")
+//            self.request(.GET, urlString: urlString, parameters: nil) { (result, error) in
+//                WTLog("result:\(result)")
+//                
+//            }
+        }
+    }
+}

@@ -54,10 +54,12 @@ let WTTimeInterval = Int(NSDate().timeIntervalSince1970)
 /// uuid
 let WTUDID =  (UIDevice.currentDevice().identifierForVendor?.UUIDString)!
 
+
 /// 日志打印
 public func WTLog<T>(message: T, file: String = #file, method: String = #function, line: Int = #line)
 {
 //    #if DEBUG
-        print("\((file as NSString).lastPathComponent):\(line) \(method): \(message)")
+        //print("\((file as NSString).lastPathComponent):\(line) \(method): \(message)")
+        print("\(line) \(method): \(message)")
 //    #endif
 }

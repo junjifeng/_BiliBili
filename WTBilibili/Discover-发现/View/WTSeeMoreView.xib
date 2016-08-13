@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HY-QiHei50.ttf">
+            <string>HYQiHei-EZJ</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WTSeeMoreView" customModule="WTBilibili" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="14"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rzb-Ag-5Ko">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="14"/>
+                </imageView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zs-0l-zcz">
+                    <rect key="frame" x="276" y="-1" width="48" height="15"/>
+                    <fontDescription key="fontDescription" name="HYQiHei-EZJ" family="HYQiHei" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_openMore" translatesAutoresizingMaskIntoConstraints="NO" id="SAf-Tp-oSI">
+                    <rect key="frame" x="257" y="0.0" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="T0q-tM-S1w"/>
+                        <constraint firstAttribute="height" constant="14" id="ctz-KJ-Lj1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Rzb-Ag-5Ko" secondAttribute="trailing" id="5z1-LH-gvS"/>
+                <constraint firstItem="Rzb-Ag-5Ko" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9gy-12-vqg"/>
+                <constraint firstItem="0Zs-0l-zcz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AVq-fQ-nWY"/>
+                <constraint firstItem="SAf-Tp-oSI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bsa-xk-30T"/>
+                <constraint firstAttribute="bottom" secondItem="Rzb-Ag-5Ko" secondAttribute="bottom" id="Ks1-Lb-PYy"/>
+                <constraint firstItem="0Zs-0l-zcz" firstAttribute="leading" secondItem="SAf-Tp-oSI" secondAttribute="trailing" constant="5" id="bgI-j9-aZo"/>
+                <constraint firstItem="0Zs-0l-zcz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cbo-KJ-l9J"/>
+                <constraint firstItem="Rzb-Ag-5Ko" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tx3-8k-6Yd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="seeMoreIconImageV" destination="SAf-Tp-oSI" id="8WP-Hs-GLg"/>
+                <outlet property="seeMoreLabel" destination="0Zs-0l-zcz" id="Jjz-ZY-Zoc"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_openMore" width="12" height="12"/>
+    </resources>
+</document>

@@ -26,7 +26,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-Hs-tVW">
-                    <rect key="frame" x="120" y="34" width="31" height="14.5"/>
+                    <rect key="frame" x="120" y="34" width="347" height="14.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.98431372549019602" green="0.44705882352941173" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -42,6 +42,7 @@
                     <rect key="frame" x="80" y="34" width="30" height="15"/>
                     <color key="backgroundColor" red="0.71764705880000002" green="0.75294117650000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstAttribute="width" constant="30" id="WmT-AB-ELV"/>
                         <constraint firstAttribute="height" constant="15" id="ZuU-w5-Mzd"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
@@ -49,7 +50,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="live_info_ico" translatesAutoresizingMaskIntoConstraints="NO" id="we4-nj-GMN">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_info_ico" translatesAutoresizingMaskIntoConstraints="NO" id="we4-nj-GMN">
                     <rect key="frame" x="118" y="11" width="9" height="14"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7235" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfb-AA-7cq">
@@ -71,16 +72,28 @@
                         <color key="titleColor" red="0.98431372549999996" green="0.44705882349999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_corner_ico" translatesAutoresizingMaskIntoConstraints="NO" id="cIn-ji-G1f">
+                    <rect key="frame" x="477" y="41" width="40" height="25"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.5万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBg-mT-Jp4">
+                    <rect key="frame" x="482" y="36" width="30" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="IiM-FL-ZQb" firstAttribute="centerY" secondItem="7JH-Lv-iiC" secondAttribute="centerY" id="2aA-2b-1TE"/>
                 <constraint firstItem="KOx-Ar-g2x" firstAttribute="leading" secondItem="vPd-Ie-CPh" secondAttribute="leading" id="8cw-PY-omL"/>
+                <constraint firstItem="cIn-ji-G1f" firstAttribute="top" secondItem="fBg-mT-Jp4" secondAttribute="top" constant="5" id="B9z-HN-nKQ"/>
                 <constraint firstAttribute="trailing" secondItem="BrZ-WC-M7w" secondAttribute="trailing" constant="18" id="CmU-2c-WG0"/>
                 <constraint firstItem="Nfb-AA-7cq" firstAttribute="top" secondItem="vPd-Ie-CPh" secondAttribute="bottom" constant="8" id="DCh-BC-rjr"/>
                 <constraint firstItem="we4-nj-GMN" firstAttribute="leading" secondItem="KOx-Ar-g2x" secondAttribute="trailing" constant="5" id="F1S-qy-pYW"/>
                 <constraint firstItem="VcN-Hs-tVW" firstAttribute="leading" secondItem="vPd-Ie-CPh" secondAttribute="trailing" constant="10" id="KCF-77-M6v"/>
                 <constraint firstAttribute="bottom" secondItem="UkQ-VG-mbj" secondAttribute="bottom" id="KOR-Eo-gim"/>
+                <constraint firstItem="cIn-ji-G1f" firstAttribute="trailing" secondItem="fBg-mT-Jp4" secondAttribute="trailing" constant="5" id="N2L-cs-pfK"/>
+                <constraint firstItem="cIn-ji-G1f" firstAttribute="leading" secondItem="VcN-Hs-tVW" secondAttribute="trailing" constant="10" id="Oyv-9u-ruJ"/>
                 <constraint firstItem="IiM-FL-ZQb" firstAttribute="leading" secondItem="7JH-Lv-iiC" secondAttribute="leading" constant="10" id="QiD-jq-rOp"/>
                 <constraint firstItem="KOx-Ar-g2x" firstAttribute="leading" secondItem="IiM-FL-ZQb" secondAttribute="trailing" constant="10" id="VRe-kw-dj0"/>
                 <constraint firstItem="UkQ-VG-mbj" firstAttribute="leading" secondItem="7JH-Lv-iiC" secondAttribute="leading" id="XDp-mU-1YJ"/>
@@ -88,9 +101,13 @@
                 <constraint firstItem="we4-nj-GMN" firstAttribute="centerY" secondItem="KOx-Ar-g2x" secondAttribute="centerY" id="fBM-wQ-YuY"/>
                 <constraint firstItem="vPd-Ie-CPh" firstAttribute="top" secondItem="KOx-Ar-g2x" secondAttribute="bottom" constant="8" id="fcj-SX-CLV"/>
                 <constraint firstItem="VcN-Hs-tVW" firstAttribute="centerY" secondItem="vPd-Ie-CPh" secondAttribute="centerY" id="jgr-z9-auE"/>
+                <constraint firstItem="BrZ-WC-M7w" firstAttribute="centerY" secondItem="fBg-mT-Jp4" secondAttribute="centerY" id="k8k-JK-HjW"/>
+                <constraint firstItem="cIn-ji-G1f" firstAttribute="bottom" secondItem="fBg-mT-Jp4" secondAttribute="bottom" constant="-5" id="l4I-2P-moX"/>
                 <constraint firstItem="KOx-Ar-g2x" firstAttribute="top" secondItem="IiM-FL-ZQb" secondAttribute="top" constant="-2" id="laF-PZ-DqC"/>
                 <constraint firstAttribute="height" constant="85" id="npb-t9-Ipd"/>
+                <constraint firstItem="cIn-ji-G1f" firstAttribute="leading" secondItem="fBg-mT-Jp4" secondAttribute="leading" constant="-5" id="oVZ-yk-jeQ"/>
                 <constraint firstAttribute="trailing" secondItem="UkQ-VG-mbj" secondAttribute="trailing" id="syi-wn-sTl"/>
+                <constraint firstItem="BrZ-WC-M7w" firstAttribute="leading" secondItem="fBg-mT-Jp4" secondAttribute="trailing" constant="10" id="tP9-x8-n6H"/>
                 <constraint firstItem="Nfb-AA-7cq" firstAttribute="leading" secondItem="vPd-Ie-CPh" secondAttribute="leading" id="zvU-b7-gCE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
@@ -106,6 +123,7 @@
         </view>
     </objects>
     <resources>
+        <image name="live_corner_ico" width="15" height="25"/>
         <image name="live_info_ico" width="9" height="14"/>
     </resources>
 </document>
